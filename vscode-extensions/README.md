@@ -1,4 +1,10 @@
-Run this command in VSCode Terminal to list all your extensions
+# VSCode Extensions List
+
+## Command to List Extensions
+
+Run this command in VSCode Terminal to list all your extensions `code --list-extensions | % { "code --install-extension $_" }`
+
+```powershell
 code --list-extensions | % { "code --install-extension $_" }
 ---------------------------------------------------------------
 List Update Date : 2020-03-14
@@ -57,3 +63,4 @@ code --install-extension streetsidesoftware.code-spell-checker
 code --install-extension TimVaneker.serverless-snippets
 code --install-extension Tyriar.sort-lines
 code --install-extension WASTeamAccount.WebTemplateStudio-dev-nightly
+```
