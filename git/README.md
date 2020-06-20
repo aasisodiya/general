@@ -211,6 +211,8 @@ git checkout master
 # Now you can merge the branch
 git merge branch-name
 # this merge is called as fast forward merge
+git merge --abort
+# use abort in case you run into conflict and don't want to resolve it just yet
 ```
 
 Command to delete the branch
