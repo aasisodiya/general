@@ -44,8 +44,8 @@ Your identification has been saved with the new passphrase.
 Command to set username and email, need to be done onetime only. *(user.name is also the author name)*
 
 ```powershell
-git config --global user.name "akash"
-git config --global user.email "akash_sisodiya@persistent.co.in"
+git config --global user.name "Akashsingh Sisodiya"
+git config --global user.email "aasisodiya@github.com"
 ```
 
 To check above changes run below commands
@@ -132,7 +132,7 @@ git log --since=1-01-2018
 # to display log before date ddmmyy
 git log --until=2-01-2018
 # to display log using author
-git log --author="akash"
+git log --author="Akash Sisodiya"
 # to display log using message
 git log --grep="case sensitive message"
 ```
@@ -140,7 +140,7 @@ git log --grep="case sensitive message"
 Command to get help on specific git command
 
 ```powershell
-git somecommand --help
+git <somecommand> --help
 ```
 
 > To ignore the files we use .gitignore, and you may also want to track .gitignore
@@ -157,7 +157,7 @@ git diff --staged
 Command to add deleted file into staging area
 
 ```powershell
-git rm deletefile.txt
+git rm deletedfile.txt
 ```
 
 > On renaming it will show that the file is deleted and another new file is added. But when we use `git add .` it will show renamed.
@@ -170,7 +170,7 @@ git checkout shacode
 # Going back to master(original/initial)
 git checkout master
 # Switch between version/branches
-git checkout bug123
+git checkout branch_name
 ```
 
 Command to undo changes - `git revert` vs `git reset`
@@ -191,7 +191,13 @@ git revert head
 Command to create new branch
 
 ```powershell
-git branch bug123
+git branch branch_name
+```
+
+Command to register a branch on remote repository ([But why?](https://stackoverflow.com/questions/37770467/why-do-i-have-to-git-push-set-upstream-origin-branch))
+
+```powershell
+git push --set-upstream origin branch_name
 ```
 
 Command to view Branches
@@ -249,7 +255,7 @@ git rebase master
 git merge branch-name
 ```
 
-> [git tagging](https://www.atlassian.com/git/tutorials/inspecting-a-repository/git-tag)
+> [Git Tagging](https://www.atlassian.com/git/tutorials/inspecting-a-repository/git-tag)
 
 Command for [Git Stashing](https://git-scm.com/docs/git-stash)
 
