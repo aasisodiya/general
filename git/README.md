@@ -204,7 +204,7 @@ Command to create new branch
 git branch branch_name
 ```
 
-Command to register a branch on remote repository ([But why?](https://stackoverflow.com/questions/37770467/why-do-i-have-to-git-push-set-upstream-origin-branch))
+Command to register a branch on remote repository ([But why?](https://stackoverflow.com/questions/37770467/why-do-i-have-to-git-push-set-upstream-origin-branch)) Simply creating a branch on local won't make it available for other people to use. So you will have to push the branch to remote as well. Use below command to push branch to remote
 
 ```powershell
 git push --set-upstream origin branch_name
