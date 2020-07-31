@@ -239,6 +239,8 @@ git branch -d branch-name
 # If branch is not merged, above command will not allow you to delete the branch
 git branch -D branch-name
 # Above command will forcefully delete the branch whether or not changes have been merged
+git push origin --delete branch-name
+# Above command will delete the branch from remote
 ```
 
 Command to create a branch and checkout at the same time
