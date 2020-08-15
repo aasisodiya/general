@@ -4,13 +4,13 @@
 
 1. Create a New Repository
 
-![Creating a New Repository](img/img1.png)
+![Creating a New Repository](images/image-001.png)
 
 Take above image as reference. You need to create a repository with same name as your github username. Which in my case is `aasisodiya`. As soon as you enter the correct username you will receive a message from github as shown in above image. Give it a description and strictly keep it Public else it won't work. Followed by Select Initialize this repository with a README. Then click on create repository. Voila! and you are done.
 
 You will be able to see a new repository with your account name. Below is the image of my repository.
 
-![My Repository](img/img2.png)
+![My Repository](images/image-002.png)
 
 Now lets get to work. As you can see this default template is very basic. Hi there :wave: !? So you will have to customize it to suite your profile.
 
