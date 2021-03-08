@@ -14,3 +14,5 @@ Below are the links for respective README.md files in my repository
 * [Windows Notes](https://aasisodiya.github.io/general/windows)
 * AWS Notes
   * [VPC Peering](https://aasisodiya.github.io/general/aws/aws-vpc-peering)
+* SE Notes
+  * [Sanity Testing Vs Smoke Testing Vs Regression Testing](se/note-sanity-vs-smoke-vs-regression/README.md)
