@@ -34,17 +34,64 @@ For Adding Badges you can use [https://shields.io/](https://shields.io/category/
 
 ### Github Stats
 
-This is really cool stuff, that's why I didn't add expected output so just try it yourself.
+This is really cool stuff, so just try it yourself.
 
 ```md
 ![My github stats](https://github-readme-stats.vercel.app/api?username=aasisodiya&count_private=true&show_icons=true&theme=radical)
-[![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=aasisodiya&repo=github-readme-stats)](https://github.com/aasisodiya/github-readme-stats)
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=aasisodiya)](https://github.com/aasisodiya/github-readme-stats)
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=aasisodiya&layout=compact)](https://github.com/aasisodiya/github-readme-stats)
+[![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=aasisodiya&repo=github-readme-stats)](https://aasisodiya.github.io/)
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=aasisodiya)](https://aasisodiya.github.io/)
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=aasisodiya&layout=compact)](https://aasisodiya.github.io/)
 ```
+
+![My github stats](https://github-readme-stats.vercel.app/api?username=aasisodiya&count_private=true&show_icons=true&theme=radical)
+
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=aasisodiya&layout=compact)](https://aasisodiya.github.io/)
+
+Below code helps you to display - Total Contributions, Current Streak and Longest Streak and Wakatime Profile
+
+```md
+[![GitHub Stats](https://github-readme-streak-stats.herokuapp.com/?user=aasisodiya)](#)
+
+Below code is for Wakatime Profile
+
+[![aasisodiya's wakatime stats](https://github-readme-stats.vercel.app/api/wakatime?username=aasisodiya)](#)
+```
+
+[![GitHub Stats](https://github-readme-streak-stats.herokuapp.com/?user=aasisodiya)](#)
+
+### Github Repository Cards
+
+Below code helps you to insert your repository card in Markdown
+
+```md
+[![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=aasisodiya&repo=general)](https://aasisodiya.github.io/)
+```
+
+Below are some of my repostiories
+
+[![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=aasisodiya&repo=general)](https://aasisodiya.github.io/)
+
+[![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=aasisodiya&repo=go)](https://aasisodiya.github.io/)
+
+[![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=aasisodiya&repo=WebProjects)](https://aasisodiya.github.io/)
+
+### Github Visits
+
+Below code helps you to track the visitors count and also provide a follow button
+
+```md
+[![Visitor](https://visitor-badge.laobi.icu/badge?page_id=aasisodiya.aasisodiya)](https://github.com/aasisodiya) [![GitHub followers](https://img.shields.io/github/followers/aasisodiya.svg?style=social&label=Follow)](https://github.com/aasisodiya?tab=followers)
+```
+
+[![Visitor](https://visitor-badge.laobi.icu/badge?page_id=aasisodiya.aasisodiya)](https://github.com/aasisodiya) [![GitHub followers](https://img.shields.io/github/followers/aasisodiya.svg?style=social&label=Follow)](https://github.com/aasisodiya?tab=followers)
+
+---
+
+
 
 ## Reference
 
 - [Managing your profile README](https://docs.github.com/en/github/setting-up-and-managing-your-github-profile/managing-your-profile-readme#about-your-profile-readme)
 - [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/basic-writing-and-formatting-syntax)
 - [Complete list of github markdown emoji markup](https://gist.github.com/rxaviers/7360908)
+- [Visitor Badge](https://visitor-badge.laobi.icu/#)
