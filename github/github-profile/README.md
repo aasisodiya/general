@@ -1,10 +1,26 @@
-# Github Profile Addons
+# Creating a GitHub (README.md) Profile
+
+1. Create a New Repository
+
+![Creating a New Repository](images/image-001.png)
+
+Take above image as reference. You need to create a repository with same name as your github username. Which in my case is `aasisodiya`. As soon as you enter the correct username you will receive a message from github as shown in above image. Give it a description and strictly keep it Public else it won't work. Followed by Select Initialize this repository with a README. Then click on create repository. Voila! and you are done.
+
+You will be able to see a new repository with your account name. Below is the image of my repository.
+
+![My Repository](images/image-002.png)
+
+Now lets get to work. As you can see this default template is very basic. `Hi there 👋` !? So you will have to customize it to suite your profile.
+
+Below are some interesting things you can add to your README.md file
+
+> **Note:** You will have to replace user specific info in below code with your own data. For ex. `aasisodiya` will get replaced with `your_profile_name`.
 
 ## Badges
 
 |Code|Output|
 |-|-|
-|`![Alternate Text](https://img.shields.io/static/v1?label=<LABEL>&message=<MESSAGE>&color=<COLOR>)`<br>set LABEL=label, MESSAGE=message and COLOR=orange|![](https://img.shields.io/static/v1?label=label&message=message&color=orange)|
+|`![Alternate Text](https://img.shields.io/static/v1?label=<LABEL>&message=<MESSAGE>&color=<COLOR>)`<br>set LABEL=label, MESSAGE=message and COLOR=orange|![Alternate Text](https://img.shields.io/static/v1?label=label&message=message&color=orange)|
 |`![Alternate Text](https://img.shields.io/badge/<LABEL>-<MESSAGE>-<COLOR>)`<br>set LABEL=label, MESSAGE=message and COLOR=orange|![Alternate Text](https://img.shields.io/badge/label-message-orange)|
 |`![Alternate Text](https://img.shields.io/badge/<LABEL>-<MESSAGE>-<COLOR>?style={style}&logo={logo}&logoColor={logoColor}&logoWidth={logoWidth}&labelColor={labelColor}))`<br>set LABEL=label, MESSAGE=message, COLOR=ffa500, style are of 5 types given below, logo can be chosen from link below, logoColor=violet, logoWidth=30 and labelColor=black|![Alternate Text](https://img.shields.io/badge/label-message-ffa500?style=flat-square&logo=github&logoColor=violet&logoWidth=30&labelColor=black)|
 
@@ -16,6 +32,7 @@
 
 |Parameter|Description|
 |-|-|
+|Alternate Text|`Alternate Text` is displayed when image fails to load|
 |LABEL|`LABEL` is the left side of the badge|
 |MESSAGE|`MESSAGE` is the right side of the badge|
 |COLOR|`COLOR` is the background color of right side|
@@ -37,7 +54,7 @@
 
 > For Logo visit this link [Logo List](https://simpleicons.org/)
 
-|Type|Output|Code|
+|Badge Type|Output|Code|
 |-|-|-|
 |With Label|![Github](https://img.shields.io/badge/github-label-orange?style=plastic&logo=github)|`![Github](https://img.shields.io/badge/github-label-orange?style=plastic&logo=github)`|
 |Without Label|![Github](https://img.shields.io/badge/github-orange?style=plastic&logo=github)|`![Github](https://img.shields.io/badge/github-orange?style=plastic&logo=github)`|
@@ -57,6 +74,7 @@
 |![License](https://img.shields.io/github/license/aasisodiya/general?color=ffa500)|`![License](https://img.shields.io/github/license/aasisodiya/general?color=ffa500)`|
 |![Sponsors](https://img.shields.io/github/sponsors/aasisodiya)|`![Sponsors](https://img.shields.io/github/sponsors/aasisodiya)`|
 |![Watchers](https://img.shields.io/github/watchers/aasisodiya/general)|`![Watchers](https://img.shields.io/github/watchers/aasisodiya/general)`|
+|![GitHub followers](https://img.shields.io/github/followers/aasisodiya?label=Followers&logo=GitHub)|`![GitHub followers](https://img.shields.io/github/followers/aasisodiya?label=Followers&logo=GitHub)`|
 
 ## Social Media Badges
 
@@ -115,7 +133,7 @@ Below code will help you display your github stats
 
 ![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=aasisodiya&repo=general)
 
-Below code will help you display your repository
+Below code helps you to insert your repository card in Markdown
 
 ```md
 ![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=aasisodiya&repo=general)
@@ -139,8 +157,22 @@ Below code will help you display your Most Used Languages but in compact way
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=aasisodiya&layout=compact)
 ```
 
+## Github Streak
+
+![GitHub Stats](https://github-readme-streak-stats.herokuapp.com/?user=aasisodiya)
+
+You can display your streak in Github using below code
+
+```md
+![GitHub Stats](https://github-readme-streak-stats.herokuapp.com/?user=aasisodiya)
+```
+
 ## Reference
 
 - [Shields.io](https://shields.io/)
 - [SimpleIcons.org](https://simpleicons.org/)
 - [Waka Readme](https://github.com/marketplace/actions/waka-readme)
+- [Managing your profile README](https://docs.github.com/en/github/setting-up-and-managing-your-github-profile/managing-your-profile-readme#about-your-profile-readme)
+- [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/basic-writing-and-formatting-syntax)
+- [Complete list of github markdown emoji markup](https://gist.github.com/rxaviers/7360908)
+- [Visitor Badge](https://visitor-badge.laobi.icu/#)
