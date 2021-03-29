@@ -70,4 +70,4 @@ The `ss` **(socket statistics)** tool is a CLI command used to show network stat
 
 |Command|Description|
 |-|-|
-|sudo lsof -n -i :{port}|Use this command to check pid for given port|
+|`sudo lsof -n -i :{port}`|Use this command to check pid for given port|
