@@ -161,7 +161,6 @@ SAMPLEVAR="value"
 `cd /etc/systemd/system` Open system services folder using the given command
 
 Now before proceeding, You will have to stop the service using command `systemctl stop myservice` and then take a backup of your service file before editing. Now to view the service file use this command: `cat myservice.service`. The given file is editable but its not recommended to edit it directly. Instead the better way is to use command: `systemctl edit myservice` which will create an overide file which we can edit.
-
 `/etc/systemd/system/myservice.service.d` inside this there is a file with extension `.conf` i.e `override.conf`. Here you can add your environment variable.
 
 To add environment variable use below similar syntax and just replace `customvar=value` and you are done. Now start the service
