@@ -1,5 +1,23 @@
 # Linux/Ubuntu
 
+- [Linux/Ubuntu](#linuxubuntu)
+  - [Commands & Notes](#commands--notes)
+    - [View System Logs](#view-system-logs)
+    - [System Services Location & Commands](#system-services-location--commands)
+    - [Docker Commands](#docker-commands)
+    - [`netstat` Command](#netstat-command)
+    - [`ss` **(socket statistics)** Command](#ss-socket-statistics-command)
+    - [`lsof` **(list open files)** Command](#lsof-list-open-files-command)
+    - [`.bashrc`](#bashrc)
+      - [Adding Alias To `.bashrc`](#adding-alias-to-bashrc)
+    - [Environment Variable on EC2](#environment-variable-on-ec2)
+      - [`/etc/environment` vs `~/.profile`](#etcenvironment-vs-profile)
+    - [Environment Variable In `systemd` Service](#environment-variable-in-systemd-service)
+    - [`kill` Command](#kill-command)
+      - [Issue: What is a defunct process and why doesn't it get killed?](#issue-what-is-a-defunct-process-and-why-doesnt-it-get-killed)
+    - [`ps` Command](#ps-command)
+  - [Reference](#reference)
+
 ## Commands & Notes
 
 ### View System Logs
@@ -122,6 +140,20 @@ You can for instance create the file `/etc/profile.d/myenvvars.sh` and set varia
 ```bash
 export JAVA_HOME=/usr/lib/jvm/jdk1.7.0
 export PATH=$PATH:$JAVA_HOME/bin
+# With White Spaces
+VARWITHWHITESPACE="`id -un`"
+export VARWITHWHITESPACE
+```
+
+If you want to add variable into `/etc/environment` use below format. Always take backup before you do any changes
+
+```bash
+cat /etc/environment
+vi /etc/environment
+```
+
+```bash
+SAMPLEVAR="value"
 ```
 
 ### Environment Variable In `systemd` Service
@@ -140,9 +172,58 @@ Environment="customvar=value"
 
 **Note:** If the directory (`myservice.service.d`) exists and is empty then your service will be disabled, so if you don't intend to put something in the directory then delete it.
 
+---
+
+### `kill` Command
+
+The syntax of the kill command takes the following form: `kill [OPTIONS] [PID]...` The kill command sends a signal to specified processes or process groups, causing them to act according to the signal.
+
+|Commands|Description|
+|-|-|
+|`kill [PID]`|Kill a process by Process ID|
+|`killall [PNAME]`|Kill a process by Process name|
+|`kill -l`|Get a list of all the signals that can be sent to the kill command|
+
+|Signal Name|Single Value|Effect|
+|-|-|-|
+|`SIGHUP`|1|Hangup|
+|`SIGINT`|2|Interrupt from keyboard|
+|`SIGKILL`|9|Kill signal|
+|`SIGTERM`|15|Termination signal|
+|`SIGSTOP`|17, 19, 23|Stop the process|
+
+```bash
+kill -1 PID
+kill -SIGHUP PID
+```
+
+To terminate or kill a process with the `kill` command, first you need to find the process ID number (PID). You can do this using different commands such as `top`, `ps` , `pidof` and `pgrep`
+
+#### Issue: What is a defunct process and why doesn't it get killed?
+
+`defunct` means the process has either completed its task or has been corrupted or killed, but its child processes are still running or these parent process is monitoring its child process. To kill this kind of process, `kill -9 PID` doesn't work. You can try to kill them with this command but it will show this again and again.
+
+**Solution**: `sudo kill -9 pid ppid` where `pid` is process id and `ppid` is parent process id
+
+> Use `ps -ef | grep defunct` to get ppid
+
+---
+
+### `ps` Command
+
+> Use `sudo` as required
+
+|Command|Description|
+|-|-|
+|`ps -efj`|Command to view the process group IDs (GIDs)|
+|`ps -ef | grep defunct`|Command to view the defunct process|
+
+---
+
 ## Reference
 
 - [Environment Variables](https://help.ubuntu.com/community/EnvironmentVariables)
 - [Setting PATH variable in /etc/environment vs .profile](https://askubuntu.com/questions/866161/setting-path-variable-in-etc-environment-vs-profile)
 - [What is the purpose of .bashrc and how does it work?](https://unix.stackexchange.com/questions/129143/what-is-the-purpose-of-bashrc-and-how-does-it-work)
 - [How to set environment variable in systemd service?](https://serverfault.com/questions/413397/how-to-set-environment-variable-in-systemd-service)
+- [What is a defunct process and why doesn't it get killed?](https://askubuntu.com/questions/201303/what-is-a-defunct-process-and-why-doesnt-it-get-killed)
