@@ -301,7 +301,8 @@ git remote rename <old-name> <new-name>
 ```
 
 ```powershell
-git push -u origin master//one time command(-u)
+git push -u origin master
+#one time command(-u)
 
 # config setting
 git config --global http.proxy "http://custom.proxy.co.in:8080"
@@ -315,6 +316,45 @@ git pull
 
 # Cloning a repository, come out of your own main repository and make a new directory
 git clone URL //one time command
+```
+
+## Renaming A Branch
+
+Renaming Local Branch:
+
+```bash
+# Current branch you want to rename:
+git branch -m new-branch-name
+
+# Different branch you want to rename:
+git branch -m old-branch-name new-branch-name
+```
+
+Renaming and Deleting old-branch-name from Remote and push new-branch-name
+
+```bash
+git push origin :old-name new-name
+```
+
+Now Reset the upstream for the new-branch-name:
+
+```bash
+# First checkout the branch and then run:
+git push origin -u new-branch-name
+```
+
+```bash
+# Switch to the local branch you want to rename
+git checkout <old_name>
+
+# Rename the local branch
+git branch -m <new_name>
+
+# Push the <new_name> local branch and reset the upstream branch
+git push origin -u <new_name>
+
+# Delete the <old_name> remote branch
+git push origin --delete <old_name>
 ```
 
 ## Reference
