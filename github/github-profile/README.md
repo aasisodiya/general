@@ -175,6 +175,16 @@ Sample of 3D model will look like the one given below
 
 ![Github Skyline](images/skyline.png)
 
+## Github Profile Visitor Counter (Hits)
+
+![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https://github.com/your-profile-id)
+
+As shown above, below code will help you display how many visitors are viewing your Github, Website, Notion.
+
+```md
+![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https://github.com/your-profile-id)
+```
+
 ## Reference
 
 - [Shields.io](https://shields.io/)
@@ -185,3 +195,4 @@ Sample of 3D model will look like the one given below
 - [Complete list of github markdown emoji markup](https://gist.github.com/rxaviers/7360908)
 - [Visitor Badge](https://visitor-badge.laobi.icu/#)
 - [GitHub Skyline](https://skyline.github.com/)
+- [Hits](https://hits.seeyoufarm.com/)
