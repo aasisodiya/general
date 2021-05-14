@@ -26,6 +26,10 @@ To add a colored palceholder you can use below code examples
 
 ![aasisodiya](https://place-hold.it/100x30/000000/ffa500/ff00ff.png&text=aasisodiya&bold&italic&fontsize=10)
 
+## Badges With Logo
+
+[Click this link](logo-badge/) to get list of all badges with Logo with their respective Markdown Code
+
 ## Reference
 
 - [Place-Hold.it](https://place-hold.it/)
