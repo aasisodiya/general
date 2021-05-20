@@ -1,8 +1,72 @@
 let fs = require("fs");
 
-let demodata = "[{\"LOGO\":\"fortran\",\"LOGONAME\":\"Fortran\",\"LOGOCOLOR\":\"#734F96\"},{\"LOGO\":\"gatsby\",\"LOGONAME\":\"Gatsby\",\"LOGOCOLOR\":\"#663399\"},{\"LOGO\":\"scaleway\",\"LOGONAME\":\"Scaleway\",\"LOGOCOLOR\":\"#4F0599\"}]";
+let demodata = "[{\"LOGONAME\":\"\",\"LOGOCOLOR\":\"Limited time offer: Get 10 free Adobe Stock images.\\nADS VIA CARBON\"},{\"LOGO\":\"fortran\",\"LOGONAME\":\"Fortran\",\"LOGOCOLOR\":\"#734F96\"},{\"LOGO\":\"gatsby\",\"LOGONAME\":\"Gatsby\",\"LOGOCOLOR\":\"#663399\"},{\"LOGO\":\"scaleway\",\"LOGONAME\":\"Scaleway\",\"LOGOCOLOR\":\"#4F0599\"},{\"LOGO\":\"pusher\",\"LOGONAME\":\"Pusher\",\"LOGOCOLOR\":\"#300D4F\"}]";
 // console.log(demodata);
 let json = JSON.parse(demodata);
+
+
+let interestedData = ["adobecreativecloud",
+  "adobeillustrator",
+  "adobeaftereffects",
+  "adobexd",
+  "adobeindesign",
+  "alpinedotjs",
+  "amazonalexa",
+  "amazonaws",
+  "amazondynamodb",
+  "amazons3",
+  "anaconda",
+  "android",
+  "arduino",
+  "artstation",
+  "atlassian",
+  "bitbucket",
+  "brave",
+  "chart-dot-js",
+  "coronaengine",
+  "curl",
+  "dialogflow",
+  "eclipseide",
+  "epicgames",
+  "fastapi",
+  "figma",
+  "filezilla",
+  "firebase",
+  "flutter",
+  "fontawesome",
+  "git",
+  "gitlfs",
+  "gitea",
+  "githubactions",
+  "gitlab",
+  "gitkraken",
+  "go",
+  "googleanalytics",
+  "googlefonts",
+  "jira",
+  "jquery",
+  "jsfiddle",
+  "jsonwebtokens",
+  "kibana",
+  "laravel",
+  "linux",
+  "logstash",
+  "mocha",
+  "mysql",
+  "okta",
+  "p5-dot-js",
+  "postgresql",
+  "postman",
+  "qwiklabs",
+  "raspberrypi",
+  "serverless",
+  "sketchfab",
+  "swagger",
+  "terraform",
+  "three-dot-js",
+  "unrealengine",
+  "visualstudiocode"
+];
 // console.log(json);
 let compiledcode = [];
 json.forEach((element) => {
@@ -12,14 +76,20 @@ json.forEach((element) => {
   // let LOGO = element.LOGO;
   let LOGO = element.LOGONAME.toLowerCase().replace(/ /g, "-");
   let LOGOCOLOR = "white";
-
-  if (LOGO != undefined && LOGONAME != undefined && BG != undefined) {
-    let code = `![${LOGONAME1}](https://img.shields.io/badge/${LOGONAME}-${BG}?style=for-the-badge&logo=${LOGO}&logoColor=${LOGOCOLOR})`;
-    compiledcode.push(code);
+  console.log(element.LOGO);
+  if (interestedData.includes(element.LOGO)) {
+  // if (!interestedData.includes(element.LOGO)) {
+    if (LOGO != undefined && LOGONAME != undefined && BG != undefined) {
+      let code = `![${LOGONAME1}](https://img.shields.io/badge/${LOGONAME}-${BG}?style=for-the-badge&logo=${LOGO}&logoColor=${LOGOCOLOR})`;
+      compiledcode.push(code);
+    }
   }
 });
 
-console.log(compiledcode[0]);
+console.log(compiledcode.length);
+console.log(interestedData.length);
+
+
 
 // console.log(compiledcode);
 
