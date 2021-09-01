@@ -198,6 +198,12 @@ REVERT is nothing but rewriting the commit with undo
 git revert head
 ```
 
+```powershell
+git reset --hard origin/<branch_name>
+```
+
+Above command will help you reset the local branch to the state of the remote branch. That is if you have any commits that only you can see or any changes on your local, then on running above command it will delete all that and align your branch to the same commit as that of the remote branch. (This will delete all your local changes forever!)
+
 Command to create new branch
 
 ```powershell
@@ -313,6 +319,9 @@ git merge
 
 # pull is a combination of fetch and merge
 git pull
+
+# get all of the changes made across all the branches to your local machine.
+git pull --all
 
 # Cloning a repository, come out of your own main repository and make a new directory
 git clone URL //one time command
