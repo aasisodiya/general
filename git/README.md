@@ -478,6 +478,8 @@ $ git config --global commit.gpgsign true
 
 > For VS Code you can go to settings and search `gpg` and enable commit signing
 
+Now when you commit the changes it might ask you for passphrase so enter the same that you used for the one while creating the GPG key
+
 > Some really good article on Commit Signing for reference: [Link1](https://docs.github.com/en/github/authenticating-to-github/managing-commit-signature-verification/signing-commits), [Link2](https://withblue.ink/2020/05/17/how-and-why-to-sign-git-commits.html) and [Link3](https://www.freecodecamp.org/news/what-is-commit-signing-in-git/amp/)
 
 ## Reference
