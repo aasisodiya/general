@@ -377,6 +377,8 @@ git push origin -u <new_name>
 git push origin --delete <old_name>
 ```
 
+---
+
 ## Commit Signing in Git
 
 On Github, when you commit any code your name appears as an Author. Considering that its set in the git config. Now if you want to you can change the email and username and hence show the commit as someone's elses commit. Now That's something which can impact your code repository, if it's being handled by multiple users. Now on Github we have "Verified" Tag on commits. This is possible due to Commit Signing in Git. Commit Signing helps you to prove that you were indeed the author. It also helps to ensure that the commit is made by a verified user. Its really important for you to make sure that the commits are verified during a PR review. This is a major Security Step. You can impersonate anyone's name but it's impossible for anyone to copy your signature. So make it a habit of signing the commit.
@@ -473,7 +475,12 @@ $ gpg --armor --export 3AA5C34371567BD2
 
 ```bash
 $ git config --global user.signingkey 3AA5C34371567BD2
+$ git config --global commit.gpgsign true
 ```
+
+> For VS Code you can go to settings and search `gpg` and enable commit signing
+
+Now when you commit the changes it might ask you for passphrase so enter the same that you used for the one while creating the GPG key
 
 > Some really good article on Commit Signing for reference: [Link1](https://docs.github.com/en/github/authenticating-to-github/managing-commit-signature-verification/signing-commits), [Link2](https://withblue.ink/2020/05/17/how-and-why-to-sign-git-commits.html) and [Link3](https://www.freecodecamp.org/news/what-is-commit-signing-in-git/amp/)
 
