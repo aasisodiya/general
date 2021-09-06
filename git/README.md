@@ -377,6 +377,8 @@ git push origin -u <new_name>
 git push origin --delete <old_name>
 ```
 
+---
+
 ## Commit Signing in Git
 
 On Github, when you commit any code your name appears as an Author. Considering that its set in the git config. Now if you want to you can change the email and username and hence show the commit as someone's elses commit. Now That's something which can impact your code repository, if it's being handled by multiple users. Now on Github we have "Verified" Tag on commits. This is possible due to Commit Signing in Git. Commit Signing helps you to prove that you were indeed the author. It also helps to ensure that the commit is made by a verified user. Its really important for you to make sure that the commits are verified during a PR review. This is a major Security Step. You can impersonate anyone's name but it's impossible for anyone to copy your signature. So make it a habit of signing the commit.
