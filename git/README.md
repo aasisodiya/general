@@ -284,6 +284,15 @@ git rebase master
 git merge branch-name
 ```
 
+Command to create Git Tags
+
+```
+git tag v1.0.0-beta COMMIT_ID
+git tag featureName/v1.0.0-beta COMMIT_ID
+git push origin v1.0.0-beta
+git push origin featureName/v1.0.0-beta
+```
+
 > [Git Tagging](https://www.atlassian.com/git/tutorials/inspecting-a-repository/git-tag)
 
 Command for [Git Stashing](https://git-scm.com/docs/git-stash)
