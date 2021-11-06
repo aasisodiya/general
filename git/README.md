@@ -215,6 +215,30 @@ git reset --hard origin/<branch_name>
 
 Above command will help you reset the local branch to the state of the remote branch. That is if you have any commits that only you can see or any changes on your local, then on running above command it will delete all that and align your branch to the same commit as that of the remote branch. (This will delete all your local changes forever!)
 
+Command to reset branch to the state of remote branch
+
+```bash
+git reset --hard origin/feature
+git clean -f
+```
+
+If you `reset --hard` , it will make your local code and local history be just like it was at that commit. But if you wanted to push this to someone else who has the new history, it would fail:
+
+```bash
+git reset --hard <commit_id>
+```
+
+And if you `reset --soft`, it will move your HEAD to where they were , but leave your local files etc. the same:
+
+```bash
+git reset --soft <commit_id>
+```
+
+```bash
+git reset --hard [previous commit SHA id here]
+git push origin [branch name] -f
+```
+
 Command to create new branch
 
 ```powershell
