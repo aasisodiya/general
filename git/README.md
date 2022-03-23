@@ -9,6 +9,8 @@
   - [Renaming A Branch](#renaming-a-branch)
   - [Commit Signing in Git](#commit-signing-in-git)
     - [Generating a GPG key](#generating-a-gpg-key)
+  - [Large File System](#large-file-system)
+  - [Troubleshooting](#troubleshooting)
   - [Reference](#reference)
 
 ## Important Points
@@ -317,6 +319,15 @@ git push origin v1.0.0-beta
 git push origin featureName/v1.0.0-beta
 ```
 
+Command to Delete Git Tag
+
+```cmd
+git tag -d v1.0.0-test
+git push --delete origin v1.0.0-test
+git tag -d <tag_name>
+git push --delete origin <tag_name>
+```
+
 > [Git Tagging](https://www.atlassian.com/git/tutorials/inspecting-a-repository/git-tag)
 
 Command for [Git Stashing](https://git-scm.com/docs/git-stash)
@@ -516,6 +527,48 @@ $ git config --global commit.gpgsign true
 Now when you commit the changes it might ask you for passphrase so enter the same that you used for the one while creating the GPG key
 
 > Some really good article on Commit Signing for reference: [Link1](https://docs.github.com/en/github/authenticating-to-github/managing-commit-signature-verification/signing-commits), [Link2](https://withblue.ink/2020/05/17/how-and-why-to-sign-git-commits.html) and [Link3](https://www.freecodecamp.org/news/what-is-commit-signing-in-git/amp/)
+
+---
+
+## Large File System
+
+Discovered LFS after encountering below error:
+
+```ps
+C:\Users\akash\Documents\GitHub\design>git push
+Enumerating objects: 226, done.
+Counting objects: 100% (226/226), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (225/225), done.
+Writing objects: 100% (225/225), 173.14 MiB | 4.67 MiB/s, done.
+Total 225 (delta 17), reused 0 (delta 0)
+remote: Resolving deltas: 100% (17/17), done.
+remote: warning: See http://git.io/iEPt8g for more information.
+remote: warning: File behance/ADOBE ILLUSTRATOR/SISAI - PERSISTENT.ai is 66.66 MB; this is larger than GitHub's recommended maximum file size of 50.00 MB
+remote: warning: GH001: Large files detected. You may want to try Git Large File Storage - https://git-lfs.github.com.
+To https://github.com/aasisodiya/design.git
+   3787a78..a3bf7a0  main -> main
+
+C:\Users\akash\Documents\GitHub\design>
+```
+
+- GitHub's recommended maximum file size is `50.00 MB`
+
+---
+
+## Troubleshooting
+
+- You get following error on Github Desktop, when you are committing without password
+
+  ```ps
+  error: cannot spawn gpg: No such file or directory
+  error: gpg failed to sign the data
+  fatal: failed to write commit object
+  ```
+
+  To resolve this issue, try committing through command-line
+
+---
 
 ## Reference
 
