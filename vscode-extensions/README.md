@@ -79,6 +79,7 @@ code --install-extension SonarSource.sonarlint-vscode
 code --install-extension streetsidesoftware.code-spell-checker
 code --install-extension TimVaneker.serverless-snippets
 code --install-extension Tyriar.sort-lines
+code --install-extension usernamehw.errorlens
 code --install-extension WallabyJs.quokka-vscode
 code --install-extension WASTeamAccount.WebTemplateStudio-dev-nightly
 code --install-extension xabikos.JavaScriptSnippets
