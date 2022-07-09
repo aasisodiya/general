@@ -1,5 +1,7 @@
 # SCP
 
+![Visitor](https://visitor-badge.laobi.icu/badge?page_id=aasisodiya.general.scp)
+
 ## Sample Commands
 
 ### Command To Copy Folder From Local Machine to EC2

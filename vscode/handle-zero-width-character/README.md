@@ -1,5 +1,7 @@
 # How To View Zero Width Space Unicode Character
 
+![Visitor](https://visitor-badge.laobi.icu/badge?page_id=aasisodiya.general.vscode.zerowidth)
+
 - [How To View Zero Width Space Unicode Character](#how-to-view-zero-width-space-unicode-character)
   - [What is Zero Width Space Unicode Character?](#what-is-zero-width-space-unicode-character)
   - [Steps To view zero width space unicode character in VSCode](#steps-to-view-zero-width-space-unicode-character-in-vscode)

@@ -1,5 +1,7 @@
 # Git
 
+![Visitor](https://visitor-badge.laobi.icu/badge?page_id=aasisodiya.general.git)
+
 - [Git](#git)
   - [Important Points](#important-points)
     - [How to configure Code Commit](#how-to-configure-code-commit)
@@ -198,10 +200,10 @@ git push -f
 Soft Reset Vs Hard Reset Vs Mixed Reset Vs Keep Reset
 
 - **Soft:** When using `git reset --soft HEAD~1` you will remove the last commit from the current branch, but the file changes will stay in your working tree. Also the changes will stay on your index, so following with a git commit will create a commit with the exact same changes as the commit you "removed" before.
-- **Mixed:** This is the default mode and quite similar to soft. When "removing" a commit with `git reset HEAD~1` you will still keep the changes in your working tree but not on the index; so if you want to "redo" the commit, you will have to add the changes (git add) before commiting.
-- **Hard:** When using `git reset --hard HEAD~1` you will lose all uncommited changes in addition to the changes introduced in the last commit. The changes won't stay in your working tree so doing a git status command will tell you that you don't have any changes in your repository.
-  _Tread carefully with this one. If you accidentally remove uncommited changes which were never tracked by git (speak: committed or at least added to the index), you have no way of getting them back using git._
-- **Keep:** `git reset --keep HEAD~1` is an interesting and useful one. It only resets the files which are different between the current HEAD and the given commit. It aborts the reset if anyone of these files has uncommited changes. It's basically acts as a safer version of hard. This mode is particularly useful when you have a bunch of changes and want to switch to a different branch without losing these changes - for example when you started to work on the wrong branch.
+- **Mixed:** This is the default mode and quite similar to soft. When "removing" a commit with `git reset HEAD~1` you will still keep the changes in your working tree but not on the index; so if you want to "redo" the commit, you will have to add the changes (git add) before committing.
+- **Hard:** When using `git reset --hard HEAD~1` you will lose all uncommitted changes in addition to the changes introduced in the last commit. The changes won't stay in your working tree so doing a git status command will tell you that you don't have any changes in your repository.
+  _Tread carefully with this one. If you accidentally remove uncommitted changes which were never tracked by git (speak: committed or at least added to the index), you have no way of getting them back using git._
+- **Keep:** `git reset --keep HEAD~1` is an interesting and useful one. It only resets the files which are different between the current HEAD and the given commit. It aborts the reset if anyone of these files has uncommitted changes. It's basically acts as a safer version of hard. This mode is particularly useful when you have a bunch of changes and want to switch to a different branch without losing these changes - for example when you started to work on the wrong branch.
 
 > When doing git reset to remove a commit the commit isn't really lost, there just is no reference pointing to it or any of it's children. You can still recover a commit which was "deleted" with git reset by finding it's SHA-1 key, for example with a command such as git reflog.
 
@@ -284,6 +286,7 @@ git branch -D branch-name
 # Above command will forcefully delete the branch whether or not changes have been merged
 git push origin --delete branch-name
 # Above command will delete the branch from remote
+git push -d origin feature-vs-code
 ```
 
 Command to create a branch and checkout at the same time
@@ -312,7 +315,7 @@ git merge branch-name
 
 Command to create Git Tags
 
-```
+```bash
 git tag v1.0.0-beta COMMIT_ID
 git tag featureName/v1.0.0-beta COMMIT_ID
 git push origin v1.0.0-beta
@@ -368,7 +371,7 @@ git push -u origin master
 # config setting
 git config --global http.proxy "http://custom.proxy.co.in:8080"
 
-# not merge , but want to know what we are upto?
+# not merge , but want to know what we are up to?
 git fetch
 git merge
 
@@ -468,61 +471,53 @@ gpg --list-secret-keys --keyid-format=long
 2. Open Git Bash.
 3. Generate a GPG key pair. Since there are multiple versions of GPG, you may need to consult the relevant man page to find the appropriate key generation command. Your key must use RSA.
 
-```bash
-gpg --full-generate-key
-```
+    ```bash
+    gpg --full-generate-key
+    ```
 
 4. At the prompt, specify the kind of key you want, or press `Enter` to accept the default.
-
 5. At the prompt, specify the key size you want, or press `Enter` to accept the default. Your key must be at least `4096` bits.
-
 6. Enter the length of time the key should be valid. Press `Enter` to specify the default selection, indicating that the key doesn't expire.
-
 7. Verify that your selections are correct.
-
 8. Enter your user ID information.
-
-> Note: When asked to enter your email address, ensure that you enter the verified email address for your GitHub account. To keep your email address private, use your GitHub-provided no-reply email address.
-
+    > Note: When asked to enter your email address, ensure that you enter the verified email address for your GitHub account. To keep your email address private, use your GitHub-provided no-reply email address.
 9. Type a secure passphrase.
+10. Use the `gpg --list-secret-keys --keyid-format=long` command to list the long form of the GPG keys for which you have both a public and private key. A private key is required for signing commits or tags.
 
-10.  Use the `gpg --list-secret-keys --keyid-format=long` command to list the long form of the GPG keys for which you have both a public and private key. A private key is required for signing commits or tags.
+    ```bash
+    gpg --list-secret-keys --keyid-format=long
+    ```
 
-```bash
-gpg --list-secret-keys --keyid-format=long
-```
-
-> Note: Some GPG installations on Linux may require you to use `gpg2 --list-keys --keyid-format LONG` to view a list of your existing keys instead. In this case you will also need to configure Git to use `gpg2` by running `git config --global gpg.program gpg2`.
+    > Note: Some GPG installations on Linux may require you to use `gpg2 --list-keys --keyid-format LONG` to view a list of your existing keys instead. In this case you will also need to configure Git to use `gpg2` by running `git config --global gpg.program gpg2`.
 
 11. From the list of GPG keys, copy the long form of the GPG key ID you'd like to use. In this example, the GPG key ID is `3AA5C34371567BD2`:
 
-```bash
-$ gpg --list-secret-keys --keyid-format=long
-/Users/hubot/.gnupg/secring.gpg
-------------------------------------
-sec   4096R/3AA5C34371567BD2 2016-03-10 [expires: 2017-03-10]
-uid                          Hubot 
-ssb   4096R/42B317FD4BA89E7A 2016-03-10
-```
+    ```bash
+    $ gpg --list-secret-keys --keyid-format=long
+    /Users/hubot/.gnupg/secring.gpg
+    ------------------------------------
+    sec   4096R/3AA5C34371567BD2 2016-03-10 [expires: 2017-03-10]
+    uid                          Hubot
+    ssb   4096R/42B317FD4BA89E7A 2016-03-10
+    ```
 
 12. Paste the text below, substituting in the GPG key ID you'd like to use. In this example, the GPG key ID is `3AA5C34371567BD2`:
 
-```bash
-$ gpg --armor --export 3AA5C34371567BD2
-# Prints the GPG key ID, in ASCII armor format
-```
+    ```bash
+    $ gpg --armor --export 3AA5C34371567BD2
+    # Prints the GPG key ID, in ASCII armor format
+    ```
 
 13. Copy your GPG key, beginning with `-----BEGIN PGP PUBLIC KEY BLOCK-----` and ending with `-----END PGP PUBLIC KEY BLOCK-----`.
-
 14. Add the GPG key to your GitHub account.
 15. To set your GPG signing key in Git, paste the text below, substituting in the GPG key ID you'd like to use. In this example, the GPG key ID is `3AA5C34371567BD2`:
 
-```bash
-$ git config --global user.signingkey 3AA5C34371567BD2
-$ git config --global commit.gpgsign true
-```
+    ```bash
+    git config --global user.signingkey 3AA5C34371567BD2
+    git config --global commit.gpgsign true
+    ```
 
-> For VS Code you can go to settings and search `gpg` and enable commit signing
+    > For VS Code you can go to settings and search `gpg` and enable commit signing
 
 Now when you commit the changes it might ask you for passphrase so enter the same that you used for the one while creating the GPG key
 
@@ -544,7 +539,7 @@ Writing objects: 100% (225/225), 173.14 MiB | 4.67 MiB/s, done.
 Total 225 (delta 17), reused 0 (delta 0)
 remote: Resolving deltas: 100% (17/17), done.
 remote: warning: See http://git.io/iEPt8g for more information.
-remote: warning: File behance/ADOBE ILLUSTRATOR/SISAI - PERSISTENT.ai is 66.66 MB; this is larger than GitHub's recommended maximum file size of 50.00 MB
+remote: warning: File behance/ADOBE ILLUSTRATOR/SISAI - SISAILOGO.ai is 66.66 MB; this is larger than GitHub's recommended maximum file size of 50.00 MB
 remote: warning: GH001: Large files detected. You may want to try Git Large File Storage - https://git-lfs.github.com.
 To https://github.com/aasisodiya/design.git
    3787a78..a3bf7a0  main -> main

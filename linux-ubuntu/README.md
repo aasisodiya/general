@@ -1,5 +1,7 @@
 # Linux/Ubuntu
 
+![Visitor](https://visitor-badge.laobi.icu/badge?page_id=aasisodiya.general.linux)
+
 - [Linux/Ubuntu](#linuxubuntu)
   - [Commands & Notes](#commands--notes)
     - [View System Logs](#view-system-logs)

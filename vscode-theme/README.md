@@ -1,5 +1,7 @@
 # VSCode Theme
 
+![Visitor](https://visitor-badge.laobi.icu/badge?page_id=aasisodiya.general.vscode.theme)
+
 ## Prerequisites
 
 - NodeJS
@@ -14,22 +16,22 @@
 
    ```bash
    yo code
-   ? ========================================================================== 
-   We're constantly looking for ways to make yo better! 
-   May we anonymously report usage statistics to improve the tool over time?    
+   ? ==========================================================================
+   We're constantly looking for ways to make yo better!
+   May we anonymously report usage statistics to improve the tool over time?
    More info: https://github.com/yeoman/insight & http://yeoman.io
    ========================================================================== No
-   
+
         _-----_     ╭──────────────────────────╮
        |       |    │   Welcome to the Visual  │
        |--(o)--|    │   Studio Code Extension  │
       `---------´   │        generator!        │
        ( _´U`_ )    ╰──────────────────────────╯
        /___A___\   /
-        |  ~  |     
-      __'.___.'__   
+        |  ~  |
+      __'.___.'__
     ´   `  |° ´ Y `
-   
+
    ? What type of extension do you want to create? (Use arrow keys)
      New Extension (TypeScript)
      New Extension (JavaScript)
@@ -44,10 +46,10 @@
 4. Select `New Color Theme` option
 
    ```bash
-   ? Do you want to import or convert an existing TextMate color theme? (Use arrow keys)     
+   ? Do you want to import or convert an existing TextMate color theme? (Use arrow keys)
    > No, start fresh
      Yes, import an existing theme but keep it as tmTheme file.
-     Yes, import an existing theme and inline it in the Visual Studio Code color theme file. 
+     Yes, import an existing theme and inline it in the Visual Studio Code color theme file.
    ```
 
 5. Then Select `No, start fresh` Option

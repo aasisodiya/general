@@ -1,5 +1,7 @@
 # Logo Badge List
 
+![Visitor](https://visitor-badge.laobi.icu/badge?page_id=aasisodiya.general.github.markdown.logo)
+
 > Below list will take time to load so stay calm and relax
 
 |Name|Badge|Code|

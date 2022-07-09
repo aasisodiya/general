@@ -1,8 +1,10 @@
 # Markdown in Github
 
+![Visitor](https://visitor-badge.laobi.icu/badge?page_id=aasisodiya.general.github.markdown)
+
 ## Colored Placeholders in Github
 
-To add a colored palceholder you can use below code examples
+To add a colored placeholder you can use below code examples
 
 > **Note**: `style` tag won't work in Github
 
