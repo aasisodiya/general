@@ -1,6 +1,8 @@
 # Creating a GitHub (README.md) Profile
 
-1. Create a New Repository
+![Visitor](https://visitor-badge.laobi.icu/badge?page_id=aasisodiya.general.github.profile)
+
+## Create a New Repository
 
 ![Creating a New Repository](images/image-001.png)
 
