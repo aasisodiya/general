@@ -1,5 +1,7 @@
 # VSCode Extensions List
 
+![Visitor](https://visitor-badge.laobi.icu/badge?page_id=aasisodiya.general.vscode-extension)
+
 ## List of Useful VSCode Extension
 
 | Extension Name                             | Id                                                                 | Type         | Description                                                                                                                                                                                                                                                        |
