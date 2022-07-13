@@ -1,8 +1,10 @@
 # Markdown in Github
 
+![Visitor](https://visitor-badge.laobi.icu/badge?page_id=aasisodiya.general.github.markdown)
+
 ## Colored Placeholders in Github
 
-To add a colored palceholder you can use below code examples
+To add a colored placeholder you can use below code examples
 
 > **Note**: `style` tag won't work in Github
 
@@ -25,6 +27,10 @@ To add a colored palceholder you can use below code examples
 ![aasisodiya](https://via.placeholder.com/100x50/000000/ffa500?text=aasisodiya)
 
 ![aasisodiya](https://place-hold.it/100x30/000000/ffa500/ff00ff.png&text=aasisodiya&bold&italic&fontsize=10)
+
+## Badges With Logo
+
+[Click this link](logo-badge/) to get list of all badges with Logo with their respective Markdown Code
 
 ## Reference
 

@@ -1,6 +1,8 @@
 # Creating a GitHub (README.md) Profile
 
-1. Create a New Repository
+![Visitor](https://visitor-badge.laobi.icu/badge?page_id=aasisodiya.general.github.profile)
+
+## Create a New Repository
 
 ![Creating a New Repository](images/image-001.png)
 
@@ -20,14 +22,14 @@ Below are some interesting things you can add to your README.md file
 
 |Code|Output|
 |-|-|
-|`![Alternate Text](https://img.shields.io/static/v1?label=<LABEL>&message=<MESSAGE>&color=<COLOR>)`<br>set LABEL=label, MESSAGE=message and COLOR=orange|![Alternate Text](https://img.shields.io/static/v1?label=label&message=message&color=orange)|
-|`![Alternate Text](https://img.shields.io/badge/<LABEL>-<MESSAGE>-<COLOR>)`<br>set LABEL=label, MESSAGE=message and COLOR=orange|![Alternate Text](https://img.shields.io/badge/label-message-orange)|
-|`![Alternate Text](https://img.shields.io/badge/<LABEL>-<MESSAGE>-<COLOR>?style={style}&logo={logo}&logoColor={logoColor}&logoWidth={logoWidth}&labelColor={labelColor}))`<br>set LABEL=label, MESSAGE=message, COLOR=ffa500, style are of 5 types given below, logo can be chosen from link below, logoColor=violet, logoWidth=30 and labelColor=black|![Alternate Text](https://img.shields.io/badge/label-message-ffa500?style=flat-square&logo=github&logoColor=violet&logoWidth=30&labelColor=black)|
+|`![Alternate Text](https://img.shields.io/static/v1?label=<LABEL>&message=<MESSAGE>&color=<MESSAGEBGCOLOR>)`<br>set LABEL=label, MESSAGE=message and COLOR=orange|![Alternate Text](https://img.shields.io/static/v1?label=label&message=message&color=orange)|
+|`![Alternate Text](https://img.shields.io/badge/<LABEL>-<MESSAGE>-<MESSAGEBGCOLOR>)`<br>set LABEL=label, MESSAGE=message and COLOR=orange|![Alternate Text](https://img.shields.io/badge/label-message-orange)|
+|`![Alternate Text](https://img.shields.io/badge/<LABEL>-<MESSAGE>-<MESSAGEBGCOLOR>?style={style}&logo={logo}&logoColor={logoColor}&logoWidth={logoWidth}&labelColor={labelColor})`<br>set LABEL=label, MESSAGE=message, COLOR=ffa500, style are of 5 types given below, logo can be chosen from link below, logoColor=violet, logoWidth=30 and labelColor=black|![Alternate Text](https://img.shields.io/badge/label-message-ffa500?style=flat-square&logo=github&logoColor=violet&logoWidth=30&labelColor=black)|
 
 ---
 
 ```md
-![Alternate Text](https://img.shields.io/badge/<LABEL>-<MESSAGE>-<COLOR>?style={style}&logo={logo}&logoColor={logoColor}&logoWidth={logoWidth}&labelColor={labelColor}))
+![Alternate Text](https://img.shields.io/badge/<LABEL>-<MESSAGE>-<MESSAGEBGCOLOR>?style={style}&logo={logo}&logoColor={logoColor}&logoWidth={logoWidth}&labelColor={labelColor})
 ```
 
 |Parameter|Description|
@@ -175,6 +177,16 @@ Sample of 3D model will look like the one given below
 
 ![Github Skyline](images/skyline.png)
 
+## Github Profile Visitor Counter (Hits)
+
+![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https://github.com/your-profile-id)
+
+As shown above, below code will help you display how many visitors are viewing your Github, Website, Notion.
+
+```md
+![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https://github.com/your-profile-id)
+```
+
 ## Reference
 
 - [Shields.io](https://shields.io/)
@@ -185,3 +197,4 @@ Sample of 3D model will look like the one given below
 - [Complete list of github markdown emoji markup](https://gist.github.com/rxaviers/7360908)
 - [Visitor Badge](https://visitor-badge.laobi.icu/#)
 - [GitHub Skyline](https://skyline.github.com/)
+- [Hits](https://hits.seeyoufarm.com/)

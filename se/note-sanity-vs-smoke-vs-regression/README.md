@@ -1,5 +1,7 @@
 # Sanity Vs Regression Vs Smoke
 
+![Visitor](https://visitor-badge.laobi.icu/badge?page_id=aasisodiya.general.se.sanity-vs-regression)
+
 - [Sanity Vs Regression Vs Smoke](#sanity-vs-regression-vs-smoke)
   - [Difference between Smoke Testing Vs Sanity Testing Vs Regression Testing](#difference-between-smoke-testing-vs-sanity-testing-vs-regression-testing)
   - [Reference](#reference)
