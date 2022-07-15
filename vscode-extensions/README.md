@@ -152,6 +152,7 @@ code --install-extension christian-kohler.path-intellisense
 code --install-extension CoenraadS.bracket-pair-colorizer
 code --install-extension dandric.vscode-jq
 code --install-extension DanielThielking.aws-cloudformation-yaml
+code --install-extension dannysteenman.cloudformation-yaml-snippets
 code --install-extension Dart-Code.dart-code
 code --install-extension Dart-Code.flutter
 code --install-extension DavidAnson.vscode-markdownlint
@@ -169,7 +170,6 @@ code --install-extension docsmsft.docs-yaml
 code --install-extension donjayamanne.githistory
 code --install-extension donjayamanne.jquerysnippets
 code --install-extension DotJoshJohnson.xml
-code --install-extension dsteenman.cloudformation-yaml-snippets
 code --install-extension dsznajder.es7-react-js-snippets
 code --install-extension eamodio.gitlens
 code --install-extension esbenp.prettier-vscode
@@ -179,6 +179,7 @@ code --install-extension fabiospampinato.vscode-todo-plus
 code --install-extension formulahendry.auto-rename-tag
 code --install-extension formulahendry.code-runner
 code --install-extension formulahendry.terminal
+code --install-extension gera2ld.markmap-vscode
 code --install-extension GitHub.copilot
 code --install-extension GitHub.github-vscode-theme
 code --install-extension golang.go
@@ -194,11 +195,13 @@ code --install-extension kddejong.vscode-cfn-lint
 code --install-extension KnisterPeter.vscode-github
 code --install-extension ljacobsson.cfn-resource-actions
 code --install-extension mhutchie.git-graph
+code --install-extension mintlify.document
 code --install-extension ms-azuretools.vscode-azureappservice
 code --install-extension ms-azuretools.vscode-azureresourcegroups
 code --install-extension ms-azuretools.vscode-docker
 code --install-extension ms-mssql.data-workspace-vscode
 code --install-extension ms-mssql.mssql
+code --install-extension ms-mssql.sql-bindings-vscode
 code --install-extension ms-mssql.sql-database-projects-vscode
 code --install-extension ms-python.anaconda-extension-pack
 code --install-extension ms-python.python
@@ -237,8 +240,10 @@ code --install-extension shinhwagk.vscode-note
 code --install-extension SirTori.indenticator
 code --install-extension SonarSource.sonarlint-vscode
 code --install-extension streetsidesoftware.code-spell-checker
+code --install-extension TeamHub.teamhub
 code --install-extension TimVaneker.serverless-snippets
 code --install-extension tkrkt.linenote
+code --install-extension trunk.io
 code --install-extension Tyriar.sort-lines
 code --install-extension usernamehw.errorlens
 code --install-extension vscode-icons-team.vscode-icons
