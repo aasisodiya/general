@@ -1,6 +1,6 @@
 # How To View Zero Width Space Unicode Character
 
-![Visitor](https://visitor-badge.laobi.icu/badge?page_id=aasisodiya.general.vscode.zerowidth)
+[![Visitors](https://api.visitorbadge.io/api/visitors?path=aasisodiya.general.vscode.handlezerowidthchar&labelColor=%23ffa500&countColor=%23263759&labelStyle=upper)](https://visitorbadge.io/status?path=aasisodiya.general.vscode.handlezerowidthchar)
 
 - [How To View Zero Width Space Unicode Character](#how-to-view-zero-width-space-unicode-character)
   - [What is Zero Width Space Unicode Character?](#what-is-zero-width-space-unicode-character)
@@ -48,3 +48,5 @@ As you can see in above image, the zero width space unicode characters get highl
 ## Reference
 
 - [Wikipedia : Zero Width Space Unicode](https://en.wikipedia.org/wiki/Zero-width_space)
+
+[![Visitors](https://api.visitorbadge.io/api/visitors?path=aasisodiya.general&label=aasisodiya/general&labelColor=%23ffa500&countColor=%23263759&labelStyle=upper)](https://visitorbadge.io/status?path=aasisodiya.general)

@@ -1,6 +1,6 @@
 # Markdown in Github
 
-![Visitor](https://visitor-badge.laobi.icu/badge?page_id=aasisodiya.general.github.markdown)
+[![Visitors](https://api.visitorbadge.io/api/visitors?path=aasisodiya.general.markdown&labelColor=%23ffa500&countColor=%23263759&labelStyle=upper)](https://visitorbadge.io/status?path=aasisodiya.general.markdown)
 
 ## Colored Placeholders in Github
 
@@ -36,3 +36,5 @@ To add a colored placeholder you can use below code examples
 
 - [Place-Hold.it](https://place-hold.it/)
 - [Placeholder.com](https://placeholder.com/)
+
+[![Visitors](https://api.visitorbadge.io/api/visitors?path=aasisodiya.general&label=aasisodiya/general&labelColor=%23ffa500&countColor=%23263759&labelStyle=upper)](https://visitorbadge.io/status?path=aasisodiya.general)

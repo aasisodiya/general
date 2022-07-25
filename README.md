@@ -1,6 +1,6 @@
 # General Notes
 
-![Visitor](https://visitor-badge.laobi.icu/badge?page_id=aasisodiya.general)
+[![Visitors](https://api.visitorbadge.io/api/visitors?path=aasisodiya.general&labelColor=%23ffa500&countColor=%23263759&labelStyle=upper)](https://visitorbadge.io/status?path=aasisodiya.general)
 
 ## Topics
 

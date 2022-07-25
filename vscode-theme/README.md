@@ -1,6 +1,6 @@
 # VSCode Theme
 
-![Visitor](https://visitor-badge.laobi.icu/badge?page_id=aasisodiya.general.vscode.theme)
+[![Visitors](https://api.visitorbadge.io/api/visitors?path=aasisodiya.general.vscode.theme&labelColor=%23ffa500&countColor=%23263759&labelStyle=upper)](https://visitorbadge.io/status?path=aasisodiya.general.vscode.theme)
 
 ## Prerequisites
 
@@ -98,3 +98,5 @@
 - [Yo Code - Extension and Customization Generator](https://www.npmjs.com/package/generator-code)
 - [Yo Code](https://vscode.readthedocs.io/en/latest/extensions/yocode/)
 - [Your First Extension](https://code.visualstudio.com/api/get-started/your-first-extension)
+
+[![Visitors](https://api.visitorbadge.io/api/visitors?path=aasisodiya.general&label=aasisodiya/general&labelColor=%23ffa500&countColor=%23263759&labelStyle=upper)](https://visitorbadge.io/status?path=aasisodiya.general)
