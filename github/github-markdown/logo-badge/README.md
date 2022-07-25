@@ -1,6 +1,6 @@
 # Logo Badge List
 
-![Visitor](https://visitor-badge.laobi.icu/badge?page_id=aasisodiya.general.github.markdown.logo)
+[![Visitors](https://api.visitorbadge.io/api/visitors?path=aasisodiya.general.githubmarkdown.logobadge&labelColor=%23ffa500&countColor=%23263759&labelStyle=upper)](https://visitorbadge.io/status?path=aasisodiya.general.githubmarkdown.logobadge)
 
 > Below list will take time to load so stay calm and relax
 
@@ -1934,3 +1934,5 @@
 |Activision|![Activision](https://img.shields.io/badge/Activision-000000?style=for-the-badge&logo=activision&logoColor=white)|`![Activision](https://img.shields.io/badge/Activision-000000?style=for-the-badge&logo=activision&logoColor=white)`|
 |Ableton Live|![Ableton Live](https://img.shields.io/badge/Ableton%20Live-000000?style=for-the-badge&logo=ableton-live&logoColor=white)|`![Ableton Live](https://img.shields.io/badge/Ableton%20Live-000000?style=for-the-badge&logo=ableton-live&logoColor=white)`|
 |42|![42](https://img.shields.io/badge/42-000000?style=for-the-badge&logo=42&logoColor=white)|`![42](https://img.shields.io/badge/42-000000?style=for-the-badge&logo=42&logoColor=white)`|
+
+[![Visitors](https://api.visitorbadge.io/api/visitors?path=aasisodiya.general&label=aasisodiya/general&labelColor=%23ffa500&countColor=%23263759&labelStyle=upper)](https://visitorbadge.io/status?path=aasisodiya.general)

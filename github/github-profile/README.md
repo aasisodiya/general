@@ -1,6 +1,6 @@
 # Creating a GitHub (README.md) Profile
 
-![Visitor](https://visitor-badge.laobi.icu/badge?page_id=aasisodiya.general.github.profile)
+[![Visitors](https://api.visitorbadge.io/api/visitors?path=aasisodiya.general.githubprofile&labelColor=%23ffa500&countColor=%23263759&labelStyle=upper)](https://visitorbadge.io/status?path=aasisodiya.general.githubprofile)
 
 ## Create a New Repository
 
@@ -198,3 +198,5 @@ As shown above, below code will help you display how many visitors are viewing y
 - [Visitor Badge](https://visitor-badge.laobi.icu/#)
 - [GitHub Skyline](https://skyline.github.com/)
 - [Hits](https://hits.seeyoufarm.com/)
+
+[![Visitors](https://api.visitorbadge.io/api/visitors?path=aasisodiya.general&label=aasisodiya/general&labelColor=%23ffa500&countColor=%23263759&labelStyle=upper)](https://visitorbadge.io/status?path=aasisodiya.general)

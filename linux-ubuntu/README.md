@@ -1,6 +1,6 @@
 # Linux/Ubuntu
 
-![Visitor](https://visitor-badge.laobi.icu/badge?page_id=aasisodiya.general.linux)
+[![Visitors](https://api.visitorbadge.io/api/visitors?path=aasisodiya.general.linux&labelColor=%23ffa500&countColor=%23263759&labelStyle=upper)](https://visitorbadge.io/status?path=aasisodiya.general.linux)
 
 - [Linux/Ubuntu](#linuxubuntu)
   - [Commands & Notes](#commands--notes)
@@ -229,3 +229,5 @@ To terminate or kill a process with the `kill` command, first you need to find t
 - [What is the purpose of .bashrc and how does it work?](https://unix.stackexchange.com/questions/129143/what-is-the-purpose-of-bashrc-and-how-does-it-work)
 - [How to set environment variable in systemd service?](https://serverfault.com/questions/413397/how-to-set-environment-variable-in-systemd-service)
 - [What is a defunct process and why doesn't it get killed?](https://askubuntu.com/questions/201303/what-is-a-defunct-process-and-why-doesnt-it-get-killed)
+
+[![Visitors](https://api.visitorbadge.io/api/visitors?path=aasisodiya.general&label=aasisodiya/general&labelColor=%23ffa500&countColor=%23263759&labelStyle=upper)](https://visitorbadge.io/status?path=aasisodiya.general)

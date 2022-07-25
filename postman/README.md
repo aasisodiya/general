@@ -1,6 +1,6 @@
 # Postman's Features
 
-![Visitor](https://visitor-badge.laobi.icu/badge?page_id=aasisodiya.general.postman)
+[![Visitors](https://api.visitorbadge.io/api/visitors?path=aasisodiya.general.postman&labelColor=%23ffa500&countColor=%23263759&labelStyle=upper)](https://visitorbadge.io/status?path=aasisodiya.general.postman)
 
 ## Using Postman to Code
 
@@ -20,3 +20,5 @@ Postman has a very useful feature that lets you code API calls in any Language (
     ![Sample API Call](images/image-003.png)
 
 5. And Done! Now you can use the code snippets in your project. (off course not everything is perfect, you can always tweak the final code to your liking)
+
+[![Visitors](https://api.visitorbadge.io/api/visitors?path=aasisodiya.general&label=aasisodiya/general&labelColor=%23ffa500&countColor=%23263759&labelStyle=upper)](https://visitorbadge.io/status?path=aasisodiya.general)

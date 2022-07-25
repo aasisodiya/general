@@ -1,6 +1,6 @@
 # VPC Peering
 
-![Visitor](https://visitor-badge.laobi.icu/badge?page_id=aasisodiya.general.aws.aws-vpc-peering)
+[![Visitors](https://api.visitorbadge.io/api/visitors?path=aasisodiya.general.aws.aws-vpc-peering&labelColor=%23ffa500&countColor=%23263759&labelStyle=upper)](https://visitorbadge.io/status?path=aasisodiya.general.aws.aws-vpc-peering)
 
 ## Creating a Sample Infrastructure for Peering
 
@@ -98,3 +98,5 @@ Then create a Public Security Group with default access for this Public Instance
 ## Reference
 
 [AWS Doc - VPC Peering](https://docs.aws.amazon.com/vpc/latest/peering/what-is-vpc-peering.html)
+
+[![Visitors](https://api.visitorbadge.io/api/visitors?path=aasisodiya.general&label=aasisodiya/general&labelColor=%23ffa500&countColor=%23263759&labelStyle=upper)](https://visitorbadge.io/status?path=aasisodiya.general)

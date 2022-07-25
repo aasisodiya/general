@@ -1,6 +1,6 @@
 # Windows CMD
 
-![Visitor](https://visitor-badge.laobi.icu/badge?page_id=aasisodiya.general.windows)
+[![Visitors](https://api.visitorbadge.io/api/visitors?path=aasisodiya.general.windows.commands&labelColor=%23ffa500&countColor=%23263759&labelStyle=upper)](https://visitorbadge.io/status?path=aasisodiya.general.windows.commands)
 
 ## Sample Commands
 
@@ -24,3 +24,5 @@
 | List only the filenames with extension                   | `dir /b *.[extension]`    |
 | List files in directory and all sub-directories          | `dir /S *.[extension]`    |
 | List only filenames in directory and all sub-directories | `dir /S /b *.[extension]` |
+
+[![Visitors](https://api.visitorbadge.io/api/visitors?path=aasisodiya.general&label=aasisodiya/general&labelColor=%23ffa500&countColor=%23263759&labelStyle=upper)](https://visitorbadge.io/status?path=aasisodiya.general)

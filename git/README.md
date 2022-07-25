@@ -1,6 +1,6 @@
 # Git
 
-![Visitor](https://visitor-badge.laobi.icu/badge?page_id=aasisodiya.general.git)
+[![Visitors](https://api.visitorbadge.io/api/visitors?path=aasisodiya.general.git&labelColor=%23ffa500&countColor=%23263759&labelStyle=upper)](https://visitorbadge.io/status?path=aasisodiya.general.git)
 
 - [Git](#git)
   - [Important Points](#important-points)
@@ -570,3 +570,5 @@ C:\Users\akash\Documents\GitHub\design>
 - [Atlassian Git Tutorials](https://www.atlassian.com/git/tutorials)
 - [Git SCM](https://git-scm.com/doc)
 - [Types of Git Reset](https://stackoverflow.com/questions/24568936/what-is-difference-between-git-reset-hard-head1-and-git-reset-soft-head)
+
+[![Visitors](https://api.visitorbadge.io/api/visitors?path=aasisodiya.general&label=aasisodiya/general&labelColor=%23ffa500&countColor=%23263759&labelStyle=upper)](https://visitorbadge.io/status?path=aasisodiya.general)

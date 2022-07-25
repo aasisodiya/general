@@ -1,6 +1,6 @@
 # Sanity Vs Regression Vs Smoke
 
-![Visitor](https://visitor-badge.laobi.icu/badge?page_id=aasisodiya.general.se.sanity-vs-regression)
+[![Visitors](https://api.visitorbadge.io/api/visitors?path=aasisodiya.general.se.sanityvssmoke&labelColor=%23ffa500&countColor=%23263759&labelStyle=upper)](https://visitorbadge.io/status?path=aasisodiya.general.se.sanityvssmoke)
 
 - [Sanity Vs Regression Vs Smoke](#sanity-vs-regression-vs-smoke)
   - [Difference between Smoke Testing Vs Sanity Testing Vs Regression Testing](#difference-between-smoke-testing-vs-sanity-testing-vs-regression-testing)
@@ -33,3 +33,5 @@
 ## Reference
 
 [Difference between Smoke Testing Vs Sanity Testing Vs Regression Testing](https://www.softwaretestinghelp.com/smoke-testing-and-sanity-testing-difference/)
+
+[![Visitors](https://api.visitorbadge.io/api/visitors?path=aasisodiya.general&label=aasisodiya/general&labelColor=%23ffa500&countColor=%23263759&labelStyle=upper)](https://visitorbadge.io/status?path=aasisodiya.general)

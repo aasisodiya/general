@@ -1,6 +1,6 @@
 # VSCode Extensions List
 
-![Visitor](https://visitor-badge.laobi.icu/badge?page_id=aasisodiya.general.vscode-extension)
+[![Visitors](https://api.visitorbadge.io/api/visitors?path=aasisodiya.general.vscode.extension&labelColor=%23ffa500&countColor=%23263759&labelStyle=upper)](https://visitorbadge.io/status?path=aasisodiya.general.vscode.extension)
 
 ## List of Useful VSCode Extension
 
@@ -260,3 +260,5 @@ code --install-extension yzhang.markdown-all-in-one
 ```ps
 code --install-extension CoenraadS.bracket-pair-colorizer-2
 ```
+
+[![Visitors](https://api.visitorbadge.io/api/visitors?path=aasisodiya.general&label=aasisodiya/general&labelColor=%23ffa500&countColor=%23263759&labelStyle=upper)](https://visitorbadge.io/status?path=aasisodiya.general)
