@@ -156,6 +156,7 @@ code --install-extension dannysteenman.cloudformation-yaml-snippets
 code --install-extension Dart-Code.dart-code
 code --install-extension Dart-Code.flutter
 code --install-extension DavidAnson.vscode-markdownlint
+code --install-extension dbaeumer.vscode-eslint
 code --install-extension docsmsft.docs-article-templates
 code --install-extension docsmsft.docs-authoring-pack
 code --install-extension docsmsft.docs-build
@@ -194,6 +195,7 @@ code --install-extension jq-syntax-highlighting.jq-syntax-highlighting
 code --install-extension kddejong.vscode-cfn-lint
 code --install-extension KnisterPeter.vscode-github
 code --install-extension ljacobsson.cfn-resource-actions
+code --install-extension mechatroner.rainbow-csv
 code --install-extension mhutchie.git-graph
 code --install-extension mintlify.document
 code --install-extension ms-azuretools.vscode-azureappservice
@@ -215,7 +217,6 @@ code --install-extension ms-vscode.azure-account
 code --install-extension ms-vscode.live-server
 code --install-extension ms-vscode.powershell
 code --install-extension ms-vsliveshare.vsliveshare
-code --install-extension msjsdiag.debugger-for-chrome
 code --install-extension msjsdiag.vscode-react-native
 code --install-extension mtxr.sqltools
 code --install-extension mtxr.sqltools-driver-mysql
@@ -246,6 +247,7 @@ code --install-extension tkrkt.linenote
 code --install-extension trunk.io
 code --install-extension Tyriar.sort-lines
 code --install-extension usernamehw.errorlens
+code --install-extension vikas.code-navigation
 code --install-extension vscode-icons-team.vscode-icons
 code --install-extension WallabyJs.quokka-vscode
 code --install-extension WASTeamAccount.WebTemplateStudio-dev-nightly
@@ -259,6 +261,7 @@ code --install-extension yzhang.markdown-all-in-one
 
 ```ps
 code --install-extension CoenraadS.bracket-pair-colorizer-2
+code --install-extension msjsdiag.debugger-for-chrome
 ```
 
 [![Visitors](https://api.visitorbadge.io/api/visitors?path=aasisodiya.general&label=aasisodiya/general&labelColor=%23ffa500&countColor=%23263759&labelStyle=upper)](https://visitorbadge.io/status?path=aasisodiya.general)
