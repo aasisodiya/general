@@ -118,6 +118,7 @@
 | GitLive | `TeamHub.teamhub` | General | Extend VS Code with real-time collaborative superpowers |
 | Serverless Framework | `TimVaneker.serverless-snippets` | Serverless | Serverless Framework snippets and autocomplete |
 | Line Note | `tkrkt.linenote` | General | Add notes to the line of source code |
+| VSCode Pets | `tonybaloney.vscode-pets` | General | Add pets to VS Code for fun |
 | Trunk | `trunk.io` | General | blazingly fast meta code checker and formatter |
 | Sort Lines | `Tyriar.sort-lines` | General | Sorts lines of text |
 | Error Lens | `usernamehw.errorlens` | General | Improve highlighting of errors, warnings and other language diagnostics. |
@@ -252,6 +253,7 @@ code --install-extension streetsidesoftware.code-spell-checker
 code --install-extension TeamHub.teamhub
 code --install-extension TimVaneker.serverless-snippets
 code --install-extension tkrkt.linenote
+code --install-extension tonybaloney.vscode-pets
 code --install-extension trunk.io
 code --install-extension Tyriar.sort-lines
 code --install-extension usernamehw.errorlens
