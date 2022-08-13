@@ -46,11 +46,11 @@
 
 **Command**: `win key + v`
 
-On pressing this, if clipboard is not enabled then it will show you an option to enable it. You will have to click on `Turn on`
+On pressing above command, if clipboard is not enabled then it will show you an option to enable it. You will have to click on `Turn on`
 
 ![Windows Clipboard](./images/clipboard.png)
 
-One you enable this, anything you copy will show up here
+Once you enable this, anything you copy will show up here
 
 ![Windows Clipboard](./images/clipboardon.png)
 
