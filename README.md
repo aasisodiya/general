@@ -38,3 +38,7 @@ Below are the links for respective README.md files in my repository
 | 07-September-2021 | [Link](https://aasisodiya.github.io/general/git/#commit-signing-in-git)                           | Commit Signing in Git                          |
 | 04-July-2022      | [Link](https://aasisodiya.github.io/general/vscode/handle-zero-width-character)                   | How To View Zero Width Space Unicode Character |
 | 06-Aug-2022       | [Link](https://aasisodiya.github.io/general/windows#ipconfig-commands)                            | `ipconfig` Commands                            |
+
+|Date|Link|
+|-|-|
+|2022-08-20|[Checking and Disposing Idle Connection](https://aasisodiya.github.io/general/sql#checking-and-disposing-idle-connection-postgres)|
