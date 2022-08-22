@@ -67,6 +67,16 @@ Use below command to get count of different state
 select state, count(*) from pg_stat_activity group by state;
 ```
 
+Use below command to terminate idle connection from application_name as demoapp
+
+```sql
+SELECT
+    pg_terminate_backend(pid)
+FROM
+    pg_stat_activity
+WHERE pid in (SELECT pid FROM pg_stat_activity WHERE state = 'idle' AND application_name = 'demoapp');
+```
+
 ## Reference
 
 - [PostgreSQL Docs](https://www.postgresql.org/docs/9.4/functions-info.html)
