@@ -8,6 +8,32 @@
     - [How to check if you are using ssh/https for git](#how-to-check-if-you-are-using-sshhttps-for-git)
     - [How to remove passphrase from your key in order to stop GIT from asking password again and again](#how-to-remove-passphrase-from-your-key-in-order-to-stop-git-from-asking-password-again-and-again)
   - [Basic Git Commands](#basic-git-commands)
+    - [Command to create a repository](#command-to-create-a-repository)
+    - [Command to add the file to staging area](#command-to-add-the-file-to-staging-area)
+    - [Command to remove the file from staging area](#command-to-remove-the-file-from-staging-area)
+    - [Command to check current status](#command-to-check-current-status)
+    - [Command to commit changes](#command-to-commit-changes)
+    - [Command to add and commit changes at same time](#command-to-add-and-commit-changes-at-same-time)
+    - [Command to check what you have done till now](#command-to-check-what-you-have-done-till-now)
+    - [Command to get help on specific git command](#command-to-get-help-on-specific-git-command)
+    - [Command to check a difference with your current changes](#command-to-check-a-difference-with-your-current-changes)
+    - [Command to add deleted file into staging area](#command-to-add-deleted-file-into-staging-area)
+    - [Command to check how the file looked when it was committed or checkout specific commit](#command-to-check-how-the-file-looked-when-it-was-committed-or-checkout-specific-commit)
+    - [Command to undo changes - `git revert` vs `git reset`](#command-to-undo-changes---git-revert-vs-git-reset)
+    - [Soft Reset Vs Hard Reset Vs Mixed Reset Vs Keep Reset](#soft-reset-vs-hard-reset-vs-mixed-reset-vs-keep-reset)
+    - [Command to reset branch to the state of remote branch](#command-to-reset-branch-to-the-state-of-remote-branch)
+    - [Command to create new branch](#command-to-create-new-branch)
+    - [Command to view Branches](#command-to-view-branches)
+    - [Command to merge branch to master](#command-to-merge-branch-to-master)
+    - [Command to delete the branch](#command-to-delete-the-branch)
+    - [Command to create a branch and checkout at the same time](#command-to-create-a-branch-and-checkout-at-the-same-time)
+    - [Command to get decorated log](#command-to-get-decorated-log)
+    - [Command to REBASE](#command-to-rebase)
+    - [Command to create Git Tags](#command-to-create-git-tags)
+    - [Command to Delete Git Tag](#command-to-delete-git-tag)
+    - [Command for Git Stashing](#command-for-git-stashing)
+    - [Command for Viewing git remote configurations](#command-for-viewing-git-remote-configurations)
+    - [Git Remote](#git-remote)
   - [Renaming A Branch](#renaming-a-branch)
   - [Commit Signing in Git](#commit-signing-in-git)
     - [Generating a GPG key](#generating-a-gpg-key)
@@ -87,14 +113,16 @@ git config --list
 # (END) press q to terminate command
 ```
 
-Command to create a repository, one time command, created by admin user
+### Command to create a repository
+
+It is a one time command, and repo is created by admin user
 
 ```powershell
 git init
 # Initialized empty Git repository in C:/Users/akash/Documents/GitHub/temp/.git/
 ```
 
-Command to add the file to staging area
+### Command to add the file to staging area
 
 ```powershell
 # Command to add single file
@@ -107,26 +135,30 @@ git add *
 git add *.java
 ```
 
-Command to remove the file from staging area
+### Command to remove the file from staging area
 
 ```powershell
 git restore --staged *
 git restore --staged <filename>
 ```
 
-Command to check current status (green color means file is in staging area)
+### Command to check current status
+
+Here green color means file is in staging area
 
 ```powershell
 git status
 ```
 
-Command to commit changes _(You need to make sure to add files to staging that you want to commit)_
+### Command to commit changes
+
+> _(You need to make sure to add files to staging that you want to commit)_
 
 ```powershell
 git commit -m "message, present tense, specific to changes made"
 ```
 
-Command to add and commit changes at same time
+### Command to add and commit changes at same time
 
 ```powershell
 git commit -am "message"
@@ -134,7 +166,7 @@ git commit -am "message"
 
 > If the file is newly created, you may have to use add and commit individually.
 
-Command to check what you have done till now
+### Command to check what you have done till now
 
 ```powershell
 git log
@@ -152,7 +184,7 @@ git log --author="Akash Sisodiya"
 git log --grep="case sensitive message"
 ```
 
-Command to get help on specific git command
+### Command to get help on specific git command
 
 ```powershell
 git <somecommand> --help
@@ -160,7 +192,7 @@ git <somecommand> --help
 
 > To ignore the files we use .gitignore, and you may also want to track .gitignore
 
-Command to check a difference with your current changes
+### Command to check a difference with your current changes
 
 ```powershell
 # Command to check a difference with your current changes
@@ -169,7 +201,7 @@ git diff
 git diff --staged
 ```
 
-Command to add deleted file into staging area
+### Command to add deleted file into staging area
 
 ```powershell
 git rm deletedfile.txt
@@ -177,7 +209,7 @@ git rm deletedfile.txt
 
 > On renaming it will show that the file is deleted and another new file is added. But when we use `git add .` it will show renamed.
 
-Command to check how the file looked when it was commited or checkout specific commit
+### Command to check how the file looked when it was committed or checkout specific commit
 
 ```powershell
 # Jumping to a commit
@@ -188,7 +220,7 @@ git checkout master
 git checkout branch_name
 ```
 
-Command to undo changes - `git revert` vs `git reset`
+### Command to undo changes - `git revert` vs `git reset`
 
 **_RESET is something that you should avoid at all cost._**
 
@@ -197,7 +229,7 @@ git reset --hard <commit id>
 git push -f
 ```
 
-Soft Reset Vs Hard Reset Vs Mixed Reset Vs Keep Reset
+### Soft Reset Vs Hard Reset Vs Mixed Reset Vs Keep Reset
 
 - **Soft:** When using `git reset --soft HEAD~1` you will remove the last commit from the current branch, but the file changes will stay in your working tree. Also the changes will stay on your index, so following with a git commit will create a commit with the exact same changes as the commit you "removed" before.
 - **Mixed:** This is the default mode and quite similar to soft. When "removing" a commit with `git reset HEAD~1` you will still keep the changes in your working tree but not on the index; so if you want to "redo" the commit, you will have to add the changes (git add) before committing.
@@ -207,7 +239,7 @@ Soft Reset Vs Hard Reset Vs Mixed Reset Vs Keep Reset
 
 > When doing git reset to remove a commit the commit isn't really lost, there just is no reference pointing to it or any of it's children. You can still recover a commit which was "deleted" with git reset by finding it's SHA-1 key, for example with a command such as git reflog.
 
-REVERT is nothing but rewriting the commit with undo
+> REVERT is nothing but rewriting the commit with undo
 
 ```powershell
 git revert head
@@ -219,7 +251,7 @@ git reset --hard origin/<branch_name>
 
 Above command will help you reset the local branch to the state of the remote branch. That is if you have any commits that only you can see or any changes on your local, then on running above command it will delete all that and align your branch to the same commit as that of the remote branch. (This will delete all your local changes forever!)
 
-Command to reset branch to the state of remote branch
+### Command to reset branch to the state of remote branch
 
 ```bash
 git reset --hard origin/feature
@@ -243,7 +275,7 @@ git reset --hard [previous commit SHA id here]
 git push origin [branch name] -f
 ```
 
-Command to create new branch
+### Command to create new branch
 
 ```powershell
 git branch branch_name
@@ -255,7 +287,7 @@ Command to register a branch on remote repository ([But why?](https://stackoverf
 git push --set-upstream origin branch_name
 ```
 
-Command to view Branches
+### Command to view Branches
 
 ```powershell
 # To view active and local branches
@@ -264,7 +296,7 @@ git branch
 git branch -r
 ```
 
-Command to merge branch to master
+### Command to merge branch to master
 
 ```powershell
 # For merging , switch to master
@@ -276,7 +308,7 @@ git merge --abort
 # use abort in case you run into conflict and don't want to resolve it just yet
 ```
 
-Command to delete the branch
+### Command to delete the branch
 
 ```powershell
 # Deleting branch (master can not be deleted)
@@ -287,9 +319,10 @@ git branch -D branch-name
 git push origin --delete branch-name
 # Above command will delete the branch from remote
 git push -d origin feature-vs-code
+# Above command will delete the branch from remote
 ```
 
-Command to create a branch and checkout at the same time
+### Command to create a branch and checkout at the same time
 
 ```powershell
 git checkout -b branch-name
@@ -298,13 +331,13 @@ git checkout -b branch-name
 <!-- //message state
 Administrator@JAVA MINGW64 /c/DemoGitTest (master|MERGING) -->
 
-Command to get decorated log
+### Command to get decorated log
 
 ```powershell
 git log --decorate
 ```
 
-Command to REBASE
+### Command to REBASE
 
 ```powershell
 # sit on the branch and use rebase
@@ -313,7 +346,7 @@ git rebase master
 git merge branch-name
 ```
 
-Command to create Git Tags
+### Command to create Git Tags
 
 ```bash
 git tag v1.0.0-beta COMMIT_ID
@@ -322,7 +355,7 @@ git push origin v1.0.0-beta
 git push origin featureName/v1.0.0-beta
 ```
 
-Command to Delete Git Tag
+### Command to Delete Git Tag
 
 ```cmd
 git tag -d v1.0.0-test
@@ -333,7 +366,7 @@ git push --delete origin <tag_name>
 
 > [Git Tagging](https://www.atlassian.com/git/tutorials/inspecting-a-repository/git-tag)
 
-Command for [Git Stashing](https://git-scm.com/docs/git-stash)
+### Command for [Git Stashing](https://git-scm.com/docs/git-stash)
 
 ```powershell
 # To record the current state of the working directory and the index, but want to go back to a clean working directory.
@@ -344,7 +377,7 @@ git stash clear
 git list
 ```
 
-Command for Viewing git remote configurations
+### Command for Viewing git remote configurations
 
 ```powershell
 # List the remote connections you have to other repositories.
@@ -353,7 +386,7 @@ git remote
 git remote -v
 ```
 
-Git [Remote](https://www.atlassian.com/git/tutorials/syncing)
+### Git [Remote](https://www.atlassian.com/git/tutorials/syncing)
 
 ```powershell
 # Create a new connection to a remote repository. After adding a remote, you’ll be able to use <name> as a convenient shortcut for <url> in other Git commands.
