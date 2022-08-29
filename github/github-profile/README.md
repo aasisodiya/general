@@ -187,6 +187,16 @@ As shown above, below code will help you display how many visitors are viewing y
 ![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https://github.com/your-profile-id)
 ```
 
+## Last Updated Tag
+
+![Last updated](https://img.shields.io/github/last-commit/aasisodiya/general/master?label=Last%20updated&style=for-the-badge)
+
+below code will help you display when was last commit made to the repo, as shown above. Where `aasisodiya` is your github id, `general` is your repo name, and `master` is your branch name.
+
+```md
+![Last updated](https://img.shields.io/github/last-commit/aasisodiya/general/master?label=Last%20updated&style=for-the-badge)
+```
+
 ## Reference
 
 - [Shields.io](https://shields.io/)
