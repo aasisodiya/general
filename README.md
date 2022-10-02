@@ -43,3 +43,4 @@ Below are the links for respective README.md files in my repository
 |Date|Link|
 |-|-|
 |2022-08-20|[Checking and Disposing Idle Connection](https://aasisodiya.github.io/general/sql#checking-and-disposing-idle-connection-postgres)|
+|2022-10-01|[Github Pages - Jekyll - Google Analytics Integration](https://aasisodiya.github.io/general/github/github-analytics/)|
