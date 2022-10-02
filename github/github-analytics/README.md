@@ -59,19 +59,19 @@ After creating `_includes` folder create 2 files under it, with the respective c
 
 - head-custom.html
 
-  ```html
-  <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
+```html
+<!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
 
-  <!-- Setup Google Analytics -->
-  {% include head-custom-google-analytics.html %}
+<!-- Setup Google Analytics -->
+{% include head-custom-google-analytics.html %}
 
-  <!-- You can set your favicon here -->
-  <link rel="shortcut icon" type="image/x-icon" href="{{ '/assets/alogo.svg' | relative_url }}">
+<!-- You can set your favicon here -->
+<link rel="shortcut icon" type="image/x-icon" href="{{ '/assets/alogo.svg' | relative_url }}">
 
-  <!-- end custom head snippets -->
-  ```
+<!-- end custom head snippets -->
+```
 
-  Feel free to edit above files based on your requirements
+  If in case above code isn't visible/incorrect, plz refer [the repository code](https://github.com/aasisodiya/general/tree/master/github/github-analytics/_includes). Feel free to edit above files based on your requirements
 
 **Note**: You will have to replace `G-4KDE74NNXK` with your google analytics id. Also `/assets/alogo.svg` will get replaced with your image file path.
 
