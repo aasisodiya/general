@@ -30,7 +30,7 @@ Since the theme is `jekyll-theme-slate` and based on the `title` and `descriptio
 
 ![Github Page](./img/githubpage.png)
 
-As we have set the `title` as `General Notes`, hence it appears a Title of the page and `description` being set as `Compilations of General Notes on topics like git, aws, linux, ubuntu, scp, vscode, windows, github.` appears just below the title.
+As we have set the `title` as `General Notes`, hence it appears as Title of the page and `description` being set as `Compilations of General Notes on topics like git, aws, linux, ubuntu, scp, vscode, windows, github.` appears just below the title.
 
 ## Google Analytics Integration
 
@@ -71,6 +71,8 @@ After creating `_includes` folder create 2 files under it, with the respective c
   <!-- end custom head snippets -->
   ```
 
+  Feel free to edit above files based on your requirements
+
 **Note**: You will have to replace `G-4KDE74NNXK` with your google analytics id. Also `/assets/alogo.svg` will get replaced with your image file path.
 
 Awesome 👏 You are almost done. Now all you need to do is to check-in/push the changes on to your master branch. And let the GitHub Pages and Jekyll integration do their work.
@@ -87,8 +89,8 @@ Now you can open your github pages URL and you will see a new theme applied. And
   **Solution**:
   - Check your Google Analytics ID if properly configured with you github pages URL only, and is the correct one being used in the code
   - Disable AdBlock if any
-  - Might not work on ![Brave](https://img.shields.io/badge/Brave-FB542B?style=for-the-badge&logo=brave&logoColor=white) browser
-  - To verify if it's browser issue check console for errors like `Failed to load resource: net::ERR_BLOCKED_BY_CLIENT` which can be due to adblock
+  - Might not work on Brave browser
+  - To verify if its a browser issue check console for errors like `Failed to load resource: net::ERR_BLOCKED_BY_CLIENT` which can be due to adblock
 
 ## Reference
 
