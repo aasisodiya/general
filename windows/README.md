@@ -10,6 +10,9 @@
   - [`ipconfig` Commands](#ipconfig-commands)
   - [Windows Clipboard](#windows-clipboard)
   - [Snip & Sketch](#snip--sketch)
+  - [Delete Large Size Folder](#delete-large-size-folder)
+    - [Command `del /f/s/q FolderName > nul`](#command-del-fsq-foldername--nul)
+    - [Command `rmdir /s/q FolderName`](#command-rmdir-sq-foldername)
 
 ## Sample Commands
 
@@ -59,5 +62,33 @@ Once you enable this, anything you copy will show up here
 **Command**: `win key + shift + s`
 
 This will allow you to snip the screenshot and then you can paste it or edit it and save it in `Snip & Sketch`.
+
+## Delete Large Size Folder
+
+```cmd
+del /f/q/s FolderName > nul
+rmdir /q/s FolderName
+```
+
+### Command `del /f/s/q FolderName > nul`  
+
+- Deletes one or more files in given `FolderName`. This command is the same as the `erase` command
+- It leaves behind the directory structure
+- Output is set to `nul` to avoid output on screen
+
+|Parameter|Description|
+|-|-|
+|`/f`|Forces deletion of read-only files|
+|`/s`|Deletes specified files from the current directory and all subdirectories. Displays the names of the files as they are being deleted|
+|`/q`|Specifies quiet mode. You are not prompted for delete confirmation.|
+
+### Command `rmdir /s/q FolderName`
+
+Cleans up the directory structure.
+
+|Parameter|Description|
+|-|-|
+|`/s`|Deletes a directory tree (the specified directory and all its subdirectories, including all files)|
+|`/q`|Specifies quiet mode. Does not prompt for confirmation when deleting a directory tree. (Note that `/q` works only if `/s` is specified)|
 
 [![Visitors](https://api.visitorbadge.io/api/visitors?path=aasisodiya.general&label=aasisodiya/general&labelColor=%23ffa500&countColor=%23263759&labelStyle=upper)](https://visitorbadge.io/status?path=aasisodiya.general)
