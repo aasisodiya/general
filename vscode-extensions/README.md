@@ -57,6 +57,7 @@
 | markmap-vscode | `gera2ld.markmap-vscode` | Markdown | This extension integrates [markmap](https://markmap.js.org/) into VSCode |
 | GitHub Copilot | `GitHub.copilot` | General | Your AI pair programmer |
 | GitHub Theme | `GitHub.github-vscode-theme` | Theme | GitHub theme for VS Code |
+| GitHub Pull Requests and Issues | `GitHub.vscode-pull-request-github` | General | Pull Request and Issue Provider for GitHub |
 | Go | `golang.go` | Go | Rich Go language support for Visual Studio Code |
 | HashiCorp Terraform | `hashicorp.terraform` | Terraform | Syntax highlighting and autocompletion for Terraform |
 | Beautify | `HookyQR.beautify` | General | Beautify code in place for VS Code |
@@ -80,14 +81,18 @@
 | SQL Bindings | `ms-mssql.sql-bindings-vscode` | SQL | Enables users to develop and publish Azure Functions with Azure SQL bindings |
 | SQL Database Projects | `ms-mssql.sql-database-projects-vscode` | SQL | Enables users to develop and publish database schemas for MSSQL Databases |
 | Anaconda Extension Pack | `ms-python.anaconda-extension-pack` | Python | The Anaconda Extension Pack is a set of extensions that enhance the experience of Anaconda customers using Visual Studio Code |
+| isort | `ms-python.isort` | General | Import Organization support for python files using `isort`. |
 | Python | `ms-python.python` | Python | IntelliSense (Pylance), Linting, Debugging (multi-threaded, remote), Jupyter Notebooks, code formatting, refactoring, unit tests, and more. |
 | Pylance | `ms-python.vscode-pylance` | Python | A performant, feature-rich language server for Python in VS Code |
 | Jupyter | `ms-toolsai.jupyter` | Python | Jupyter notebook support, interactive programming and computing that supports Intellisense, debugging and more. |
 | Jupyter Keymap | `ms-toolsai.jupyter-keymap` | Python | Jupyter keymaps for notebooks |
 | Jupyter Notebook Renderers | `ms-toolsai.jupyter-renderers` | Python | Renderers for Jupyter Notebooks (with plotly, vega, gif, png, svg, jpeg and other such outputs) |
+| Jupyter Cell Tags | `ms-toolsai.vscode-jupyter-cell-tags` | General  | Jupyter Cell Tags support for VS Code |
+| Jupyter Slide Show | `ms-toolsai.vscode-jupyter-slideshow` | General  | Jupyter Slide Show support for VS Code |
 | Remote - Containers | `ms-vscode-remote.remote-containers` | Docker | Open any folder or repository inside a Docker container and take advantage of Visual Studio Code's full feature set. |
 | Remote - WSL | `ms-vscode-remote.remote-wsl` | General | Open any folder in the Windows Subsystem for Linux (WSL) and take advantage of Visual Studio Code's full feature set. |
 | Azure Account | `ms-vscode.azure-account` | Azure | A common Sign In and Subscription management extension for VS Code. |
+| C/C++ | `ms-vscode.cpptools` | General | C/C++ IntelliSense, debugging, and code browsing. |
 | Live Preview | `ms-vscode.live-server` | Web | Hosts a local server in your workspace for you to preview your webpages on. |
 | PowerShell | `ms-vscode.powershell` | General | Develop PowerShell modules, commands and scripts in Visual Studio Code! |
 | Live Share | `ms-vsliveshare.vsliveshare` | General | Real-time collaborative development from the comfort of your favorite tools. |
@@ -98,6 +103,7 @@
 | autoDocstring - Python Docstring Generator | `njpwerner.autodocstring` | Python | Generates python docstrings automatically |
 | indent-rainbow | `oderwat.indent-rainbow` | General | Makes indentation easier to read |
 | Material Icon Theme | `PKief.material-icon-theme` | Theme | Material Design Icons for Visual Studio Code |
+| PlatformIO IDE | `platformio.platformio-ide` | General | Professional development environment for Embedded, IoT, Arduino, CMSIS, ESP-IDF, FreeRTOS, libOpenCM3, mbed OS, Pulp OS, SPL, STM32Cube, Zephyr RTOS, ARM, AVR, Espressif (ESP8266/ESP32), FPGA, MCS-51 (8051), MSP430, Nordic (nRF51/nRF52), PIC32, RISC-V, STMicroelectronics (STM8/STM32), Teensy |
 | TypeScript Importer | `pmneo.tsimporter` | TS | Automatically searches for TypeScript definitions in workspace files and provides all known symbols as completion item to allow code completion. |
 | Polacode | `pnp.polacode` | General | Polaroid for your code |
 | View In Browser | `qinjia.view-in-browser` | Web | view a html file in system's default browser |
@@ -115,7 +121,9 @@
 | Indenticator | `SirTori.indenticator` | General | Highlights your current indent depth |
 | SonarLint | `SonarSource.sonarlint-vscode` | General | SonarLint is an IDE extension that helps you detect and fix quality issues as you write code in JavaScript, TypeScript, Python, Java, HTML and PHP. |
 | Code Spell Checker | `streetsidesoftware.code-spell-checker` | General | Spelling checker for source code |
+| Tabnine AI Autocomplete for Javascript, Python, Typescript, PHP, Go, Java, Ruby & more | `TabNine.tabnine-vscode` | General | JavaScript, Python, Java, Typescript & all other languages - AI Code completion plugin. Tabnine makes developers more productive by auto-completing their code. |
 | GitLive | `TeamHub.teamhub` | General | Extend VS Code with real-time collaborative superpowers |
+| ChatGPT: write and improve code using AI | `timkmecl.chatgpt` | General | Use ChatGPT right inside the IDE to enhance and automate your coding with AI-powered assistance (unofficial) |
 | Serverless Framework | `TimVaneker.serverless-snippets` | Serverless | Serverless Framework snippets and autocomplete |
 | Line Note | `tkrkt.linenote` | General | Add notes to the line of source code |
 | VSCode Pets | `tonybaloney.vscode-pets` | General | Add pets to VS Code for fun |
@@ -192,6 +200,7 @@ code --install-extension formulahendry.terminal
 code --install-extension gera2ld.markmap-vscode
 code --install-extension GitHub.copilot
 code --install-extension GitHub.github-vscode-theme
+code --install-extension GitHub.vscode-pull-request-github
 code --install-extension golang.go
 code --install-extension hashicorp.terraform
 code --install-extension HookyQR.beautify
@@ -215,14 +224,18 @@ code --install-extension ms-mssql.mssql
 code --install-extension ms-mssql.sql-bindings-vscode
 code --install-extension ms-mssql.sql-database-projects-vscode
 code --install-extension ms-python.anaconda-extension-pack
+code --install-extension ms-python.isort
 code --install-extension ms-python.python
 code --install-extension ms-python.vscode-pylance
 code --install-extension ms-toolsai.jupyter
 code --install-extension ms-toolsai.jupyter-keymap
 code --install-extension ms-toolsai.jupyter-renderers
+code --install-extension ms-toolsai.vscode-jupyter-cell-tags
+code --install-extension ms-toolsai.vscode-jupyter-slideshow
 code --install-extension ms-vscode-remote.remote-containers
 code --install-extension ms-vscode-remote.remote-wsl
 code --install-extension ms-vscode.azure-account
+code --install-extension ms-vscode.cpptools
 code --install-extension ms-vscode.live-server
 code --install-extension ms-vscode.powershell
 code --install-extension ms-vsliveshare.vsliveshare
@@ -233,6 +246,7 @@ code --install-extension mtxr.sqltools-driver-pg
 code --install-extension njpwerner.autodocstring
 code --install-extension oderwat.indent-rainbow
 code --install-extension PKief.material-icon-theme
+code --install-extension platformio.platformio-ide
 code --install-extension pmneo.tsimporter
 code --install-extension pnp.polacode
 code --install-extension qinjia.view-in-browser
@@ -250,7 +264,9 @@ code --install-extension shinhwagk.vscode-note
 code --install-extension SirTori.indenticator
 code --install-extension SonarSource.sonarlint-vscode
 code --install-extension streetsidesoftware.code-spell-checker
+code --install-extension TabNine.tabnine-vscode
 code --install-extension TeamHub.teamhub
+code --install-extension timkmecl.chatgpt
 code --install-extension TimVaneker.serverless-snippets
 code --install-extension tkrkt.linenote
 code --install-extension tonybaloney.vscode-pets
