@@ -34,6 +34,7 @@
     - [Command for Git Stashing](#command-for-git-stashing)
     - [Command for Viewing git remote configurations](#command-for-viewing-git-remote-configurations)
     - [Git Remote](#git-remote)
+  - [Renaming Default/Main/Master/Base Branch](#renaming-defaultmainmasterbase-branch)
   - [Renaming A Branch](#renaming-a-branch)
   - [Commit Signing in Git](#commit-signing-in-git)
     - [Generating a GPG key](#generating-a-gpg-key)
@@ -417,6 +418,32 @@ git pull --all
 # Cloning a repository, come out of your own main repository and make a new directory
 git clone URL //one time command
 ```
+
+---
+
+## Renaming Default/Main/Master/Base Branch
+
+For Github, first go to Repo `Settings`, then go to `Branches` under `Code and Automation Settings`. Now under Default branch rename the branch as shown below.
+
+![Github Branch Name change](./images/image-002.png)
+
+After which you will get a following message:
+
+```bash
+The default branch has been renamed!
+practice is now named main
+
+If you have a local clone, you can update it by running the following commands.
+
+git branch -m practice main
+git fetch origin
+git branch -u origin/main main
+git remote set-head origin -a
+```
+
+Follow the above instructions on your local and you are done.
+
+---
 
 ## Renaming A Branch
 
