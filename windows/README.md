@@ -9,10 +9,12 @@
     - [Command to list files with specific extension](#command-to-list-files-with-specific-extension)
   - [`ipconfig` Commands](#ipconfig-commands)
   - [Windows Clipboard](#windows-clipboard)
-  - [Snip & Sketch](#snip--sketch)
+  - [Snip \& Sketch](#snip--sketch)
   - [Delete Large Size Folder](#delete-large-size-folder)
     - [Command `del /f/s/q FolderName > nul`](#command-del-fsq-foldername--nul)
     - [Command `rmdir /s/q FolderName`](#command-rmdir-sq-foldername)
+  - [SimplySQL Module in Powershell](#simplysql-module-in-powershell)
+  - [Command for Card is Locked issue](#command-for-card-is-locked-issue)
 
 ## Sample Commands
 
@@ -90,5 +92,22 @@ Cleans up the directory structure.
 |-|-|
 |`/s`|Deletes a directory tree (the specified directory and all its subdirectories, including all files)|
 |`/q`|Specifies quiet mode. Does not prompt for confirmation when deleting a directory tree. (Note that `/q` works only if `/s` is specified)|
+
+## SimplySQL Module in Powershell
+
+```powershell
+set-executionpolicy unrestricted
+Import-Module -Name SimplySql
+get-module SimplySql
+```
+
+## Command for Card is Locked issue
+
+1. Open command prompt : Windows + R : `diskpart`
+2. Run command `list disk`
+3. Run command `select disk n` where `n` is the index number of card
+4. Run command `attributes disk clear readonly`
+
+---
 
 [![Visitors](https://api.visitorbadge.io/api/visitors?path=aasisodiya.general&label=aasisodiya/general&labelColor=%23ffa500&countColor=%23263759&labelStyle=upper)](https://visitorbadge.io/status?path=aasisodiya.general)
