@@ -15,6 +15,7 @@
     - [Command `rmdir /s/q FolderName`](#command-rmdir-sq-foldername)
   - [SimplySQL Module in Powershell](#simplysql-module-in-powershell)
   - [Command for Card is Locked issue](#command-for-card-is-locked-issue)
+  - [Remove Recycle Bin Folder from External Drive](#remove-recycle-bin-folder-from-external-drive)
 
 ## Sample Commands
 
@@ -107,6 +108,14 @@ get-module SimplySql
 2. Run command `list disk`
 3. Run command `select disk n` where `n` is the index number of card
 4. Run command `attributes disk clear readonly`
+
+## Remove Recycle Bin Folder from External Drive
+
+```bash
+rd /s /q E:$Recycle.bin
+```
+
+Use above command to remove the bin folder from the external drive, where you just need to replace the `E:` drive letter to actual drive letter. Open command prompt with Admin access else above command won't work.
 
 ---
 
