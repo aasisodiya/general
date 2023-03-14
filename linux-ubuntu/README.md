@@ -3,9 +3,10 @@
 [![Visitors](https://api.visitorbadge.io/api/visitors?path=aasisodiya.general.linux&labelColor=%23ffa500&countColor=%23263759&labelStyle=upper)](https://visitorbadge.io/status?path=aasisodiya.general.linux)
 
 - [Linux/Ubuntu](#linuxubuntu)
-  - [Commands & Notes](#commands--notes)
+  - [Commands \& Notes](#commands--notes)
+    - [Login Command for EC2 machine using SSH](#login-command-for-ec2-machine-using-ssh)
     - [View System Logs](#view-system-logs)
-    - [System Services Location & Commands](#system-services-location--commands)
+    - [System Services Location \& Commands](#system-services-location--commands)
     - [Docker Commands](#docker-commands)
     - [`netstat` Command](#netstat-command)
     - [`ss` **(socket statistics)** Command](#ss-socket-statistics-command)
@@ -21,6 +22,12 @@
   - [Reference](#reference)
 
 ## Commands & Notes
+
+### Login Command for EC2 machine using SSH
+
+```bash
+ssh -i "your-ec2-pem-file.pem" ubuntu@ip.address
+```
 
 ### View System Logs
 
