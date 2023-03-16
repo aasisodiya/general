@@ -187,6 +187,14 @@ As shown above, below code will help you display how many visitors are viewing y
 ![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https://github.com/your-profile-id)
 ```
 
+![Visitors](https://profile-counter.glitch.me/aasisodiya/count.svg)
+
+Markdown code for above counter is given below
+
+```md
+![Visitors](https://profile-counter.glitch.me/your-profile-id/count.svg)
+```
+
 ## Last Updated Tag
 
 ![Last updated](https://img.shields.io/github/last-commit/aasisodiya/general/master?label=Last%20updated&style=for-the-badge)
