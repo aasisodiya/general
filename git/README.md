@@ -38,6 +38,8 @@
   - [Renaming A Branch](#renaming-a-branch)
   - [Commit Signing in Git](#commit-signing-in-git)
     - [Generating a GPG key](#generating-a-gpg-key)
+      - [Sample output for above commands](#sample-output-for-above-commands)
+  - [Using Private Email on Github Commit](#using-private-email-on-github-commit)
   - [Large File System](#large-file-system)
   - [Troubleshooting](#troubleshooting)
   - [Reference](#reference)
@@ -87,7 +89,7 @@ Command to set username and email, need to be done onetime only. _(user.name is 
 
 ```powershell
 git config --global user.name "Akashsingh Sisodiya"
-git config --global user.email "aasisodiya@github.com"
+git config --global user.email "12576614+aasisodiya@users.noreply.github.com"
 ```
 
 To check above changes run below commands
@@ -96,7 +98,7 @@ To check above changes run below commands
 git config user.name
 # Akashsingh Sisodiya
 git config user.email
-# aasisodiya@github.com
+# 12576614+aasisodiya@users.noreply.github.com
 ```
 
 Use below command to check all the other options you can edit in config
@@ -240,11 +242,11 @@ git push -f
 
 > When doing git reset to remove a commit the commit isn't really lost, there just is no reference pointing to it or any of it's children. You can still recover a commit which was "deleted" with git reset by finding it's SHA-1 key, for example with a command such as git reflog.
 
-> REVERT is nothing but rewriting the commit with undo
-
 ```powershell
 git revert head
 ```
+
+> REVERT is nothing but rewriting the commit with undo
 
 ```powershell
 git reset --hard origin/<branch_name>
@@ -527,7 +529,7 @@ gpg --list-secret-keys --keyid-format=long
 
 > Note: On Github - Before generating a new GPG key, make sure you've verified your email address. If you haven't verified your email address, you won't be able to sign commits and tags with GPG.
 
-1. Download and install [the GPG command line tools](https://www.gnupg.org/download/) for your operating system. We generally recommend installing the latest version for your operating system.
+1. Download and install [the GPG command line tools](https://www.gnupg.org/download/) for your operating system. We generally recommend installing the latest version for your operating system. [https://www.gpg4win.org/get-gpg4win.html](https://www.gpg4win.org/get-gpg4win.html)
 2. Open Git Bash.
 3. Generate a GPG key pair. Since there are multiple versions of GPG, you may need to consult the relevant man page to find the appropriate key generation command. Your key must use RSA.
 
@@ -582,6 +584,164 @@ gpg --list-secret-keys --keyid-format=long
 Now when you commit the changes it might ask you for passphrase so enter the same that you used for the one while creating the GPG key
 
 > Some really good article on Commit Signing for reference: [Link1](https://docs.github.com/en/github/authenticating-to-github/managing-commit-signature-verification/signing-commits), [Link2](https://withblue.ink/2020/05/17/how-and-why-to-sign-git-commits.html) and [Link3](https://www.freecodecamp.org/news/what-is-commit-signing-in-git/amp/)
+
+#### Sample output for above commands
+
+```bash
+akash@SISTECH-ASUS MINGW64 ~/Documents/GitHub/prototype (main)
+$ gpg --list-secret-keys --keyid-format=long
+gpg: directory '/c/Users/akash/.gnupg' created
+gpg: keybox '/c/Users/akash/.gnupg/pubring.kbx' created
+gpg: /c/Users/akash/.gnupg/trustdb.gpg: trustdb created
+
+akash@SISTECH-ASUS MINGW64 ~/Documents/GitHub/prototype (main)
+$ gpg --full-generate-key
+gpg (GnuPG) 2.2.41-unknown; Copyright (C) 2022 g10 Code GmbH
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+
+Please select what kind of key you want:
+   (1) RSA and RSA (default)
+   (2) DSA and Elgamal
+   (3) DSA (sign only)
+   (4) RSA (sign only)
+  (14) Existing key from card
+Your selection? 
+RSA keys may be between 1024 and 4096 bits long.
+What keysize do you want? (3072) 4096
+Requested keysize is 4096 bits
+Please specify how long the key should be valid.
+         0 = key does not expire
+      <n>  = key expires in n days
+      <n>w = key expires in n weeks
+      <n>m = key expires in n months
+      <n>y = key expires in n years
+Key is valid for? (0) 
+Key does not expire at all
+Is this correct? (y/N) y
+
+GnuPG needs to construct a user ID to identify your key.
+
+Real name: Akash Sisodiya
+Email address: 12576614+aasisodiya@users.noreply.github.com
+Comment: Asus Laptop Key
+You selected this USER-ID:
+    "Akash Sisodiya (Asus Laptop Key) <12576614+aasisodiya@users.noreply.github.com>"
+
+Change (N)ame, (C)omment, (E)mail or (O)kay/(Q)uit? C
+Comment:
+You selected this USER-ID:
+    "Akash Sisodiya <12576614+aasisodiya@users.noreply.github.com>"
+
+Change (N)ame, (C)omment, (E)mail or (O)kay/(Q)uit? N
+Real name: Akashsingh Sisodiya
+You selected this USER-ID:
+    "Akashsingh Sisodiya <12576614+aasisodiya@users.noreply.github.com>"
+
+Change (N)ame, (C)omment, (E)mail or (O)kay/(Q)uit? O
+We need to generate a lot of random bytes. It is a good idea to perform
+some other action (type on the keyboard, move the mouse, utilize the
+disks) during the prime generation; this gives the random number
+generator a better chance to gain enough entropy.
+We need to generate a lot of random bytes. It is a good idea to perform
+some other action (type on the keyboard, move the mouse, utilize the
+disks) during the prime generation; this gives the random number
+generator a better chance to gain enough entropy.
+gpg: directory '/c/Users/akash/.gnupg/openpgp-revocs.d' created
+gpg: revocation certificate stored as '/c/Users/akash/.gnupg/openpgp-revocs.d/ASJHASJKAJUQ78SA8SA9SAAS9A8SA8SAA9S0A9SA.rev'
+public and secret key created and signed.
+
+pub   rsa4096 2023-11-17 [SC]
+      ASJHASJKAJUQ78SA8SA9SAAS9A8SA8SAA9S0A9SA
+uid                      Akashsingh Sisodiya <12576614+aasisodiya@users.noreply.github.com>
+sub   rsa4096 2023-11-17 [E]
+
+akash@SISTECH-ASUS MINGW64 ~/Documents/GitHub/prototype (main)
+$ gpg --list-secret-keys --keyid-format=long
+gpg: checking the trustdb
+gpg: marginals needed: 3  completes needed: 1  trust model: pgp
+gpg: depth: 0  valid:   1  signed:   0  trust: 0-, 0q, 0n, 0m, 0f, 1u
+/c/Users/akash/.gnupg/pubring.kbx
+---------------------------------
+sec   rsa4096/7SASA89S7A8S7A9S 2023-11-17 [SC]
+      ASJHASJKAJUQ78SA8SA9SAAS9A8SA8SAA9S0A9SA
+uid                 [ultimate] Akashsingh Sisodiya <12576614+aasisodiya@users.noreply.github.com>
+ssb   rsa4096/BBASA89S7A8S7ABB 2023-11-17 [E]
+
+akash@SISTECH-ASUS MINGW64 ~/Documents/GitHub/prototype (main)
+$ gpg --armor --export 7SASA89S7A8S7A9S
+-----BEGIN PGP PUBLIC KEY BLOCK-----
+SOMEKEY
+-----END PGP PUBLIC KEY BLOCK-----
+
+akash@SISTECH-ASUS MINGW64 ~/Documents/GitHub/prototype (main)
+$
+git config --global user.signingkey 7SASA89S7A8S7A9S
+git config --global commit.gpgsign true
+
+```
+
+---
+
+## Using Private Email on Github Commit
+
+Its better to not expose your personal email publically, so on github you can hide your personal email and instead use a github profile email. In order to enable this, all you have to do is
+
+1. Go to `Settings`
+2. Then in `Access` select `Emails`
+3. Now enable the checkbox for `Keep my email addresses private`
+
+That's it and you are done.
+
+![Keep my email addresses private](./images/image-003.png)
+
+Now after this, if you have checkbox enabled for `Block command line pushes that expose my email`, then you won't be able to push commit if `user.email` in git config is still set to your personal email. You will see following error
+
+```bash
+akash@SISTECH-ASUS MINGW64 ~/Documents/GitHub/prototype (main)
+$ git push
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 20 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 1024 bytes | 1024.00 KiB/s, done.
+Total 4 (delta 3), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (3/3), completed with 3 local objects.
+remote: error: GH007: Your push would publish a private email address.
+remote: You can make your email public or disable this protection by visiting:
+remote: http://github.com/settings/emails
+To https://github.com/aasisodiya/prototype.git
+ ! [remote rejected] main -> main (push declined due to email privacy restrictions)
+error: failed to push some refs to 'https://github.com/aasisodiya/prototype.git'
+```
+
+So now you have to update `user.email` as well to your github profile email.
+
+In order to do that use below command
+
+```bash
+# below command is for global config
+git config --global user.email "{ID}+{username}@users.noreply.github.com"
+# below command is for selected repository
+git config user.email "{ID}+{username}@users.noreply.github.com"
+```
+
+After substitution the commands looks like below
+
+```bash
+# below command is for global config
+git config --global user.email "12576614+aasisodiya@users.noreply.github.com"
+# below command is for selected repository
+git config user.email "12576614+aasisodiya@users.noreply.github.com"
+```
+
+Now run below command to set the updated author for commit
+
+```bash
+git commit --amend --reset-author --no-edit
+```
+
+Once you do all this, you might have to also reset the gpg keys as they might still be using the old email. [Reference](#generating-a-gpg-key)
 
 ---
 
