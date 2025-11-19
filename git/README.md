@@ -771,6 +771,28 @@ C:\Users\akash\Documents\GitHub\design>
 
 ---
 
+## Setting/Changing Git Commit Author Information
+
+The interactive rebase approach is pretty nice when used in conjunction with exec. You can run any shell command against a specific commit or all commits in the rebase.
+
+First set your git author settings:
+
+```bash
+git config --global user.name "John Doe"
+git config --global user.email johndoe@example.com
+```
+
+Then to reset the author for all commits after the given BASE_SHA:
+
+```bash
+git rebase -i BASE_SHA -x \
+  "git commit --amend --author 'John Doe <johndoe@example.com>' -CHEAD"
+```
+
+This will pop up your editor to confirm the changes. All you need to do here is save and quit and it will go through each commit and run the command specified in the -x flag.
+
+---
+
 ## Troubleshooting
 
 - You get following error on Github Desktop, when you are committing without password
