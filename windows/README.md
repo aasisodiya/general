@@ -6,6 +6,7 @@
   - [Sample Commands](#sample-commands)
     - [Command to list down folders and sub-folders](#command-to-list-down-folders-and-sub-folders)
     - [Command to list down all files and folders and sub-folders](#command-to-list-down-all-files-and-folders-and-sub-folders)
+    - [Command to list down all files and folders in a tree structure](#command-to-list-down-all-files-and-folders-in-a-tree-structure)
     - [Command to list files with specific extension](#command-to-list-files-with-specific-extension)
   - [`ipconfig` Commands](#ipconfig-commands)
   - [Windows Clipboard](#windows-clipboard)
@@ -31,13 +32,13 @@
 
 **Command:** `dir /s /b /o:gn > filelist.txt` Will save output to filelist.txt file
 
-### Command to list down all files and folder in tree structure
+### Command to list down all files and folders in a tree structure
 
 ```cmd
 tree /f /a > filename.txt
 ```
 
-sample of the output looks like below
+A sample of the output is shown below:
 
 ```cmd
 Folder PATH listing for volume OS
