@@ -6,6 +6,7 @@
   - [Sample Commands](#sample-commands)
     - [Command to list down folders and sub-folders](#command-to-list-down-folders-and-sub-folders)
     - [Command to list down all files and folders and sub-folders](#command-to-list-down-all-files-and-folders-and-sub-folders)
+    - [Command to list down all files and folders in a tree structure](#command-to-list-down-all-files-and-folders-in-a-tree-structure)
     - [Command to list files with specific extension](#command-to-list-files-with-specific-extension)
   - [`ipconfig` Commands](#ipconfig-commands)
   - [Windows Clipboard](#windows-clipboard)
@@ -30,6 +31,30 @@
 **Command:** `dir /s /b /o:gn`
 
 **Command:** `dir /s /b /o:gn > filelist.txt` Will save output to filelist.txt file
+
+### Command to list down all files and folders in a tree structure
+
+```cmd
+tree /f /a > filename.txt
+```
+
+A sample of the output is shown below:
+
+```cmd
+Folder PATH listing for volume OS
+Volume serial number is 1234-123
+C:.
+|   .gitignore
+|   LICENSE
+|   README.md
+|   _config.yml
+|
++---assets
+|       alogo.svg
+|
++---aws
+|   |   README.md
+```
 
 ### Command to list files with specific extension
 
@@ -73,7 +98,7 @@ del /f/q/s FolderName > nul
 rmdir /q/s FolderName
 ```
 
-### Command `del /f/s/q FolderName > nul`  
+### Command `del /f/s/q FolderName > nul`
 
 - Deletes one or more files in given `FolderName`. This command is the same as the `erase` command
 - It leaves behind the directory structure
