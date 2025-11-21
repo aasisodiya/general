@@ -31,6 +31,30 @@
 
 **Command:** `dir /s /b /o:gn > filelist.txt` Will save output to filelist.txt file
 
+### Command to list down all files and folder in tree structure
+
+```cmd
+tree /f /a > filename.txt
+```
+
+sample of the output looks like below
+
+```cmd
+Folder PATH listing for volume OS
+Volume serial number is 1234-123
+C:.
+|   .gitignore
+|   LICENSE
+|   README.md
+|   _config.yml
+|
++---assets
+|       alogo.svg
+|
++---aws
+|   |   README.md
+```
+
 ### Command to list files with specific extension
 
 | Function                                                 | Command                   |
@@ -73,7 +97,7 @@ del /f/q/s FolderName > nul
 rmdir /q/s FolderName
 ```
 
-### Command `del /f/s/q FolderName > nul`  
+### Command `del /f/s/q FolderName > nul`
 
 - Deletes one or more files in given `FolderName`. This command is the same as the `erase` command
 - It leaves behind the directory structure
