@@ -46,7 +46,7 @@
 | jQuery Code Snippets | `donjayamanne.jquerysnippets` | jQuery | Over 130 jQuery Code Snippets |
 | XML Tools | `DotJoshJohnson.xml` | XML | XML Formatting, XQuery, and XPath Tools for Visual Studio Code |
 | ES7+ React/Redux/React-Native snippets | `dsznajder.es7-react-js-snippets` | React | Extensions for React, React-Native and Redux in JS/TS with ES7+ syntax. Customizable. Built-in integration with prettier. |
-| GitLens — Git supercharged | `eamodio.gitlens` | Git | Supercharge Git within VS Code — Visualize code authorship at a glance via Git blame annotations and CodeLens, seamlessly navigate and explore Git repositories, gain valuable insights via rich visualizations and powerful comparison commands, and so much more |
+| GitLens - Git supercharged | `eamodio.gitlens` | Git | Supercharge Git within VS Code - Visualize code authorship at a glance via Git blame annotations and CodeLens, seamlessly navigate and explore Git repositories, gain valuable insights via rich visualizations and powerful comparison commands, and so much more |
 | Prettier - Code formatter | `esbenp.prettier-vscode` | General | Code formatter using prettier |
 | Comment Anchors | `ExodiusStudios.comment-anchors` | General | Place anchor tags within comments for easy file & workspace navigation. |
 | Diff | `fabiospampinato.vscode-diff` | Git | Diff 2 opened files with ease. Because running `code --diff path1 path2` is too slow. |
@@ -166,13 +166,14 @@ code --install-extension be5invis.vscode-custom-css
 code --install-extension blackmist.LinkCheckMD
 code --install-extension BlitZz.twitch-chat
 code --install-extension christian-kohler.path-intellisense
+code --install-extension codeium.codeium
 code --install-extension CoenraadS.bracket-pair-colorizer
 code --install-extension dandric.vscode-jq
 code --install-extension DanielThielking.aws-cloudformation-yaml
 code --install-extension dannysteenman.cloudformation-yaml-snippets
 code --install-extension Dart-Code.dart-code
 code --install-extension Dart-Code.flutter
-code --install-extension DavidAnson.vscode-markdownlint
+code --install-extension davidanson.vscode-markdownlint
 code --install-extension dbaeumer.vscode-eslint
 code --install-extension docsmsft.docs-article-templates
 code --install-extension docsmsft.docs-authoring-pack
@@ -198,11 +199,14 @@ code --install-extension formulahendry.auto-rename-tag
 code --install-extension formulahendry.code-runner
 code --install-extension formulahendry.terminal
 code --install-extension gera2ld.markmap-vscode
-code --install-extension GitHub.copilot
+code --install-extension github.copilot
+code --install-extension github.copilot-chat
 code --install-extension GitHub.github-vscode-theme
 code --install-extension GitHub.vscode-pull-request-github
 code --install-extension golang.go
+code --install-extension google.geminicodeassist
 code --install-extension hashicorp.terraform
+code --install-extension hediet.debug-visualizer
 code --install-extension HookyQR.beautify
 code --install-extension HookyQR.minify
 code --install-extension huizhou.githd
@@ -224,9 +228,11 @@ code --install-extension ms-mssql.mssql
 code --install-extension ms-mssql.sql-bindings-vscode
 code --install-extension ms-mssql.sql-database-projects-vscode
 code --install-extension ms-python.anaconda-extension-pack
+code --install-extension ms-python.debugpy
 code --install-extension ms-python.isort
 code --install-extension ms-python.python
 code --install-extension ms-python.vscode-pylance
+code --install-extension ms-python.vscode-python-envs
 code --install-extension ms-toolsai.jupyter
 code --install-extension ms-toolsai.jupyter-keymap
 code --install-extension ms-toolsai.jupyter-renderers
