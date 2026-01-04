@@ -16,11 +16,11 @@ REST stands for **REpresentational State Transfer (REST)**
 
 ## Status Codes
 
-* **1×× Informational**
+* **1xx Informational**
   * 100 Continue
   * 101 Switching Protocols
   * 102 Processing
-* **2×× Success**
+* **2xx Success**
   * 200 OK
   * 201 Created
   * 202 Accepted
@@ -31,7 +31,7 @@ REST stands for **REpresentational State Transfer (REST)**
   * 207 Multi-Status
   * 208 Already Reported
   * 226 IM Used
-* **3×× Redirection**
+* **3xx Redirection**
   * 300 Multiple Choices
   * 301 Moved Permanently
   * 302 Found
@@ -40,7 +40,7 @@ REST stands for **REpresentational State Transfer (REST)**
   * 305 Use Proxy
   * 307 Temporary Redirect
   * 308 Permanent Redirect
-* **4×× Client Error**
+* **4xx Client Error**
   * 400 Bad Request
   * 401 Unauthorized
   * 402 Payment Required
@@ -71,7 +71,7 @@ REST stands for **REpresentational State Transfer (REST)**
   * 444 Connection Closed Without Response
   * 451 Unavailable For Legal Reasons
   * 499 Client Closed Request
-* **5×× Server Error**
+* **5xx Server Error**
   * 500 Internal Server Error
   * 501 Not Implemented
   * 502 Bad Gateway
@@ -125,7 +125,14 @@ The final level implements **HATEOAS** (Hypermedia As The Engine Of Application 
 * Thus providing the links gives the client the information they need to navigate the service.
 * **Mechanism:** The API response contains not just data, but **links** that tell the client what they can do next.
 * **Advantage:** The client does not need to hardcode URIs for every action. If a resource is "cancellable," the server provides a link to the "cancel" action in the JSON/XML response.
-* **Fielding’s View:** Roy Fielding (the creator of REST) argues that an API is not truly RESTful unless it reaches Level 3.
+* **Fielding's View:** Roy Fielding (the creator of REST) argues that an API is not truly RESTful unless it reaches Level 3.
+
+| Level | Focus               | Primary Tool                  |
+| ----- | ------------------- | ----------------------------- |
+| 0     | The Swamp of POX    | HTTP as a Tunnel (RPC)        |
+| 1     | Resources           | Individual URIs               |
+| 2     | HTTP Verbs          | Proper use of GET, POST, etc. |
+| 3     | Hypermedia Controls | HATEOAS (Discoverability)     |
 
 ## REST v/s SOAP
 
