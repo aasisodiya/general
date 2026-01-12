@@ -134,6 +134,14 @@ get-module SimplySql
 3. Run command `select disk n` where `n` is the index number of card
 4. Run command `attributes disk clear readonly`
 
+## Fix currupted external drive issue
+
+```cmd
+chkdsk <DRIVE_LETTER>: /f
+```
+
+Example: `chkdsk E: /f` will fix the issues in reading external drive.
+
 ## Remove Recycle Bin Folder from External Drive
 
 ```bash
