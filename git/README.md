@@ -221,6 +221,8 @@ git checkout shacode
 git checkout master
 # Switch between version/branches
 git checkout branch_name
+# If above command fails due to any issue, and you are sure branch_name exists then try below command
+git checkout -t origin/branch_name
 ```
 
 ### Command to undo changes - `git revert` vs `git reset`
