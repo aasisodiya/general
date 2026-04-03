@@ -816,6 +816,8 @@ Writing reports to .git\filter-repo\analysis...done.
 
 Now you can use the reports generated in above folder location `.git\filter-repo\analysis`
 
+>Use this [Reference](https://www.git-tower.com/learn/git/faq/git-filter-repo) to get details on `git filter-repo` Command
+
 ---
 
 ## Troubleshooting
