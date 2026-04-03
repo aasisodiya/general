@@ -41,6 +41,7 @@
       - [Sample output for above commands](#sample-output-for-above-commands)
   - [Using Private Email on Github Commit](#using-private-email-on-github-commit)
   - [Large File System](#large-file-system)
+  - [`git filter-repo` Command](#git-filter-repo-command)
   - [Troubleshooting](#troubleshooting)
   - [Reference](#reference)
 
@@ -791,6 +792,29 @@ git rebase -i BASE_SHA -x "git commit --amend --author 'John Doe <johndoe@exampl
 ```
 
 This will pop up your editor to confirm the changes. All you need to do here is save and quit and it will go through each commit and run the command specified in the -x flag.
+
+---
+
+## `git filter-repo` Command
+
+`git filter-repo` is a powerful tool designed for modifying Git repository history in an efficient and straightforward manner. It allows users to remove files, rewrite commit messages, change author information, and restructure repositories while preserving commit history.
+
+For using this tool, you need to have Python installed on your machine.
+
+```cmd
+python -m pip install git-filter-repo
+```
+
+Then follow below steps
+
+```cmd
+your-repo> git filter-repo --analyze
+Processed 1814 blob sizes
+Processed 427 commits
+Writing reports to .git\filter-repo\analysis...done.
+```
+
+Now you can use the reports generated in above folder location `.git\filter-repo\analysis`
 
 ---
 
